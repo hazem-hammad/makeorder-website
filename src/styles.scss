@@ -1,0 +1,41 @@
+@font-face {
+  font-family: '29LTZaridSlab-Regular';
+  src: url("assets/fonts/29LTZaridSlab-Regular.ttf");
+}
+@font-face {
+  font-family: '29LTZaridSlab-Medium';
+  src: url("assets/fonts/29LTZaridSlab-Medium.ttf");
+}
+@font-face {
+  font-family: '29LTZaridSlab-Black';
+  src: url("assets/fonts/29LTZaridSlab-Black.ttf");
+}
+@font-face {
+  font-family: '29LTZaridSlab-SemiBold';
+  src: url("assets/fonts/29LTZaridSlab-SemiBold.ttf");
+}
+
+$font-regular: '29LTZaridSlab-Regular';
+$font-medium: '29LTZaridSlab-Medium';
+$font-semi-bold: '29LTZaridSlab-SemiBold';
+$font-bold: '29LTZaridSlab-Black';
+$primary-color: #f44336;
+
+
+@import "customStyle";
+@import "assets/css/common";
+@import "assets/css/rtl";
+@import "assets/css/navbar";
+@import "assets/css/buttons";
+@import "assets/css/main-section";
+
+body {
+  font: 100% $font-regular;
+  color: #262847;
+  text-align: right;
+}
+html {
+  font-size: rem(16);
+  //font-size: 16px;
+}
+

@@ -1,0 +1,14 @@
+.btn{
+  min-width: 115px;
+  border-radius: 12px;
+  font-family: $font-semi-bold;
+  &.btn-dark{
+    border-color: #262847;
+    background-color: #262847;
+  }
+  &.btn-warning{
+    color: #fff;
+    border-color: #F15C41;
+    background-color: #F15C41;
+  }
+}
