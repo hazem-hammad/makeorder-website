@@ -1,0 +1,16 @@
+@import "customStyle";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #f44336;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+html {
+  font-size: 16px;
+}
+
+.link {
+  font-size: rem(16);
+}

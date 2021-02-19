@@ -1,0 +1,12 @@
+$theme-colors: (
+  "info": #28a745,
+  "danger": teal,
+);
+
+/* Convert px to rem */
+@function rem($fontSize) {
+  $remSize: $fontSize / 16;
+  @return #{$remSize}rem;
+}
+
+@import "~bootstrap/scss/bootstrap";
