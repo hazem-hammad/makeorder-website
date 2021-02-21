@@ -19,13 +19,13 @@ const MainSection = () => {
     let settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 3300,
     };
     return (
         <div className="main-section">
@@ -38,14 +38,29 @@ const MainSection = () => {
                                 <div>
                                     <h1 className="title">
                                         استقبل طلبات مطعمك اونلاين عبر
+                                        {/*<TypeIt*/}
+                                        {/*    className="animated-text"*/}
+                                        {/*    options={{*/}
+                                        {/*        strings: ["موقعك الخاص"],*/}
+                                        {/*        speed: 100,*/}
+                                        {/*        waitUntilVisible: true*/}
+                                        {/*    }}*/}
+                                        {/*/>*/}
                                         <TypeIt
                                             className="animated-text"
                                             options={{
                                                 strings: ["موقعك الخاص"],
-                                                speed: 100,
-                                                waitUntilVisible: true
+                                                speed: 200,
+                                                waitUntilVisible: true,
+                                                loop: true,
+                                            }}
+                                            getBeforeInit={instance => {
+                                                instance
+                                                    .pause(750)
+                                                return instance;
                                             }}
                                         />
+
                                     </h1>
                                     <ul className="list-unstyled slider-list">
                                         <li>
@@ -86,8 +101,16 @@ const MainSection = () => {
                                             className="animated-text"
                                             options={{
                                                 strings: ["جاهزين !"],
-                                                speed: 100,
-                                                waitUntilVisible: true
+                                                speed: 200,
+                                                waitUntilVisible: true,
+                                                loop: true,
+                                                startDelay:3300
+
+                                            }}
+                                            getBeforeInit={instance => {
+                                                instance
+                                                    .pause(750)
+                                                return instance;
                                             }}
                                         />
                                     </h1>

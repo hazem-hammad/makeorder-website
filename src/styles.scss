@@ -7,8 +7,8 @@
   src: url("assets/fonts/29LTZaridSlab-Medium.ttf");
 }
 @font-face {
-  font-family: '29LTZaridSlab-Black';
-  src: url("assets/fonts/29LTZaridSlab-Black.ttf");
+  font-family: '29LTZaridSlab-Bold';
+  src: url("assets/fonts/29LTZaridSlab-Bold.ttf");
 }
 @font-face {
   font-family: '29LTZaridSlab-SemiBold';
@@ -18,7 +18,7 @@
 $font-regular: '29LTZaridSlab-Regular';
 $font-medium: '29LTZaridSlab-Medium';
 $font-semi-bold: '29LTZaridSlab-SemiBold';
-$font-bold: '29LTZaridSlab-Black';
+$font-bold: '29LTZaridSlab-Bold';
 $primary-color: #f44336;
 
 
@@ -28,9 +28,10 @@ $primary-color: #f44336;
 @import "assets/css/navbar";
 @import "assets/css/buttons";
 @import "assets/css/main-section";
+@import "assets/css/customers-section";
 
 body {
-  font: 100% $font-regular;
+  font: 100% $font-medium;
   color: #262847;
   text-align: right;
 }

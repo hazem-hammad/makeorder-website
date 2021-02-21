@@ -1,0 +1,46 @@
+.customers-section{
+ min-height: 600px;
+ padding: 4rem;
+ .main-paragraph{
+  max-width: 500px;
+ }
+ .slider1{
+  .slick-track{
+   opacity: 1;
+   transform: translate3d(0px, 0px, 0px) !important;
+   width: 100% !important;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+  }
+  .slick-slide{
+    width: 100% !important;
+   &.slick-active.slick-current{
+    position: relative;
+    &:before{
+     content: '';
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 4px;
+     height: 101px;
+     background: #F15C41;
+     opacity: 0.2;
+     border-radius: 30px;
+    }
+    .main-slide-item{
+     .title{
+      color: #262847;
+     }
+    }
+   }
+  }
+  .main-slide-item {
+    max-width: 340px;
+    margin-right: 15px;
+
+  }
+ }
+
+}
