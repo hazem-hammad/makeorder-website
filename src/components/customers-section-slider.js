@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import circleBg from '../assets/images/circle-bg.png'
+import customerImageSlide01 from '../assets/images/slide-image-customer.png'
+import Image from "react-bootstrap/Image";
+
 
 export default class CustomersSectionSlider extends Component {
     constructor(props) {
@@ -21,19 +25,17 @@ export default class CustomersSectionSlider extends Component {
 
     render() {
         return (
-            <div>
+            <div className="customer-slider vertical">
                 <Row>
-                    <Col lg="6">
+                    <Col lg="5">
                         <Slider
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
-                            slidesToShow={3}
+                            slidesToShow={4}
                             swipeToSlide={true}
                             focusOnSelect={true}
-                            infinite={false}
+                            vertical= {true}
                             className="slider1"
-                            autoplay={true}
-                            autoplaySpeed={3300}
                         >
                             <div className='main-slide-item'>
                                 <h3 className="title">الإستلام من الفرع</h3>
@@ -61,24 +63,43 @@ export default class CustomersSectionSlider extends Component {
                             </div>
                         </Slider>
                     </Col>
-                    <Col lg="6">
+                    <Col lg="7">
                         <Slider
                             asNavFor={this.state.nav2}
                             ref={slider => (this.slider1 = slider)}
+                            className="customer-slider-preview"
+                            centerPadding={"10px"}
+                            draggable= {true}
+                            dots={false}
+                            arrows={false}
+                            infinite= {true}
+                            pauseOnHover= {false}
+                            swipe= {false}
+                            touchMove= {false}
+                            vertical= {true}
+                            speed= {1000}
+                            autoplaySpeed= {2000}
+                            useTransform= {true}
+                            cssEase= {'cubic-bezier(0.645, 0.045, 0.355, 1.000)'}
+                            adaptiveHeight= {true}
                             autoplay={true}
-                            autoplaySpeed={3300}
+                            verticalSwiping={true}
                         >
-                            <div>
-                                <h3 className="title">الإستلام من الفرع</h3>
+                            <div className="customer-preview-box">
+                                <Image src={circleBg} className='bg'/>
+                                <Image src={customerImageSlide01} className='image'/>
                             </div>
-                            <div>
-                                <h3 className="title">حجز طاولة طعام</h3>
+                            <div className="customer-preview-box">
+                                <Image src={circleBg} className='bg'/>
+                                <Image src={customerImageSlide01} className='image'/>
                             </div>
-                            <div>
-                                <h3 className="title"> قوائم الانتظار</h3>
+                            <div className="customer-preview-box">
+                                <Image src={circleBg} className='bg'/>
+                                <Image src={customerImageSlide01} className='image'/>
                             </div>
-                            <div>
-                                <h3 className="title"> التوصيل السريع </h3>
+                            <div className="customer-preview-box">
+                                <Image src={circleBg} className='bg'/>
+                                <Image src={customerImageSlide01} className='image'/>
                             </div>
                         </Slider>
                     </Col>

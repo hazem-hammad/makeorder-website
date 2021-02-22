@@ -4,6 +4,11 @@
   position: fixed;
   width: 100%;
   z-index: 7;
+  transition: all 0.2s linear;
+  &.scrolled{
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgb(153 153 153 / 16%), 0 3px 6px rgb(219 219 219 / 5%);
+  }
   .navbar-light {
     background-color:transparent;
     .navbar-nav{
