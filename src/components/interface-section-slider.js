@@ -37,6 +37,7 @@ export default class InterfaceSectionSlider extends Component {
                             swipeToSlide={true}
                             focusOnSelect={true}
                             className=" margin-right slider1">
+
                             <div className='main-slide-item primary-color'>
                                 <h3 className="title">
                                     <Image src={shopIcon} className='icon'/>

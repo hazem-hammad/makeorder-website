@@ -86,7 +86,7 @@ export default class NextStepSectionSlider extends Component {
                             useTransform= {true}
                             cssEase= {'cubic-bezier(0.645, 0.045, 0.355, 1.000)'}
                             adaptiveHeight= {true}
-                            autoplay={false}
+                            autoplay={true}
                             fade={true}
                         >
                             <div className="content-preview">
