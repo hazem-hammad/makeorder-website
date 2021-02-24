@@ -87,7 +87,7 @@ export default class FeaturesSectionSlider extends Component {
                             >
                                 <div className='main-slide-item primary-color'>
                                     <Row>
-                                        <Col lg="6">
+                                        <Col sm="12" md="12" lg="12" xl="6">
                                             <div>
                                                 <span className='icon'>
                                                     <Image src={saleIcon} />
@@ -108,7 +108,7 @@ export default class FeaturesSectionSlider extends Component {
                                 </div>
                                 <div className='main-slide-item warning-color'>
                                     <Row>
-                                        <Col lg="6">
+                                        <Col sm="12" md="12" lg="12" xl="6">
                                             <div>
                                                 <span className='icon'>
                                                     <Image src={moneyIcon} />
@@ -130,7 +130,7 @@ export default class FeaturesSectionSlider extends Component {
                                 </div>
                                 <div className='main-slide-item success-color'>
                                     <Row>
-                                        <Col lg="6">
+                                        <Col sm="12" md="12" lg="12" xl="6">
                                             <div>
                                                 <span className='icon'>
                                                     <Image src={moneyIcon} />

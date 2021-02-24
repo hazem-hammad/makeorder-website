@@ -4,10 +4,14 @@
 
   .slide-item{
     //min-height: 750px;
+    .content-slide{
+      padding-right: 13rem;
+    }
   }
   &-slider{
     //padding-right: 13rem;
-    .slick-slide.slick-active.slick-current{
+
+    .slick-slide.slick-active.slick-center.slick-current{
       .slide-item{
         .image-demo{
           //transform: translate3d(0px, 0, 0px);
@@ -29,6 +33,7 @@
     .animated-text{
       color: #262847;
       opacity: 0.6;
+      margin-right: 9px;
     }
   }
   .image-demo-box{
@@ -73,6 +78,8 @@
       display: flex;
       align-items: flex-start;
       max-width: 50%;
+      padding-left: 1rem;
+
       p{
         margin-bottom: 0;
         color: #66687E;

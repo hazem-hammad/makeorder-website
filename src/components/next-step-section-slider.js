@@ -34,11 +34,12 @@ export default class NextStepSectionSlider extends Component {
             {
                 breakpoint: 1024,
                 settings: {
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     centerMode:true,
-                    infinite: true,
-                    centerPadding: "60px",
-                    slidesToShow: 3,
+                    infinite: false,
+                    centerPadding: "30px",
+                    rtl:true
                 }
             },
             {
@@ -46,13 +47,21 @@ export default class NextStepSectionSlider extends Component {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    centerMode:true,
+                    infinite: false,
+                    centerPadding: "30px",
+                    rtl:true
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode:true,
+                    infinite: false,
+                    centerPadding: "30px",
+                    rtl:true
                 }
             }
         ]
@@ -64,15 +73,29 @@ export default class NextStepSectionSlider extends Component {
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
                             slidesToShow={4}
-                            swipeToSlide={true}
-                            focusOnSelect={true}
+                            swipeToSlide={false}
+                            draggable={false}
+                            focusOnSelect={false}
                             className=" slider1 "
                             responsive={responsive}
+                            pauseOnHover={false}
+                            autoplay={true}
+                            fade={false}
+                            rtl={true}
+                            speed= {800}
+                            autoplaySpeed= {3000}
                         >
-                            <div className='main-slide-item primary-color'>
+                            <div className='main-slide-item info-color'>
                                 <h3 className="title">
-                                    <Image src={usersIcon} className='icon'/>
-                                    <span>الادارة اسهل</span>
+                                    <Image src={shopIcon} className='icon'/>
+                                    <span>مطعمك اونلاين</span>
+                                </h3>
+                            </div>
+
+                            <div className='main-slide-item warning-color'>
+                                <h3 className="title">
+                                    <Image src={iPhoneIcon} className='icon'/>
+                                    <span>نوافذ بيع عديدة</span>
                                 </h3>
                             </div>
                             <div className='main-slide-item success-color'>
@@ -81,16 +104,11 @@ export default class NextStepSectionSlider extends Component {
                                     <span>عميلك اولا</span>
                                 </h3>
                             </div>
-                            <div className='main-slide-item warning-color'>
+
+                            <div className='main-slide-item primary-color'>
                                 <h3 className="title">
-                                    <Image src={iPhoneIcon} className='icon'/>
-                                    <span>نوافذ بيع عديدة</span>
-                                </h3>
-                            </div>
-                            <div className='main-slide-item info-color'>
-                                <h3 className="title">
-                                    <Image src={shopIcon} className='icon'/>
-                                    <span>مطعمك اونلاين</span>
+                                    <Image src={usersIcon} className='icon'/>
+                                    <span>الادارة اسهل</span>
                                 </h3>
                             </div>
                         </Slider>
@@ -102,10 +120,12 @@ export default class NextStepSectionSlider extends Component {
                             className=" customer-slider-preview next-step-slider-preview "
                             dots={false}
                             arrows={false}
-                            autoplay={true}
+                            // autoplay={true}
                             fade={true}
-                            speed= {800}
-                            autoplaySpeed= {3000}
+                            // speed= {800}
+                            // autoplaySpeed= {3000}
+                            pauseOnHover={false}
+                            // rtl={true}
                         >
                             <div className="content-preview">
                                 <Row>

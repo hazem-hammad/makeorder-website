@@ -17,12 +17,17 @@
    &.slick-active.slick-current{
     .main-slide-item{
      position: relative;
+
      &:before{
-      height: 90%;
+      //height: 90%;
+      animation: heightAnimate 2.8s alternate;
+
      }
      &:after{
-      height: 90%;
+      animation: heightAnimate 3s alternate;
+      //height: 90%;
       transition-delay: 0.3s;
+
      }
      .title , .paragraph{
       color: #262847;
@@ -85,4 +90,15 @@
 
 
 
+}
+
+@keyframes heightAnimate {
+ 0% {
+  //opacity: 0;
+  height: 0;
+ }
+ 100% {
+  //opacity: 1;
+  height: 90%;
+ }
 }

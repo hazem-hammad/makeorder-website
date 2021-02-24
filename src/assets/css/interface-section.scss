@@ -6,13 +6,27 @@
       &.slick-active.slick-current{
         .main-slide-item{
           position: relative;
+
+
           &:before{
-            width: 100%;
+            //height: 90%;
+            animation: widthAnimate 2.8s alternate;
+
           }
           &:after{
-            width: 100%;
+            animation: widthAnimate 3s alternate;
+            //height: 90%;
             transition-delay: 0.3s;
+
           }
+
+          //&:before{
+          //  width: 100%;
+          //}
+          //&:after{
+          //  width: 100%;
+          //  transition-delay: 0.3s;
+          //}
           .title , .paragraph{
             color: #262847;
           }

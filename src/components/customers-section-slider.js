@@ -32,6 +32,7 @@ export default class CustomersSectionSlider extends Component {
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
                             slidesToShow={4}
+                            draggable={false}
                             swipeToSlide={true}
                             focusOnSelect={true}
                             vertical= {true}
@@ -39,22 +40,7 @@ export default class CustomersSectionSlider extends Component {
                             autoplay={true}
                             speed= {800}
                             autoplaySpeed= {3000}
-                            // centerPadding={"10px"}
-                            // draggable= {true}
-                            // dots={false}
-                            // arrows={false}
-                            // infinite= {true}
-                            // pauseOnHover= {false}
-                            // swipe= {false}
-                            // touchMove= {false}
-                            // vertical= {true}
-                            // speed= {1000}
-                            // autoplaySpeed= {3000}
-                            // useTransform= {true}
-                            // cssEase= {'cubic-bezier(0.645, 0.045, 0.355, 1.000)'}
-                            // adaptiveHeight= {true}
-                            // autoplay={true}
-                            // verticalSwiping={true}
+                            pauseOnHover={false}
                         >
                             <div className='main-slide-item'>
                                 <h3 className="title">الإستلام من الفرع</h3>
@@ -91,6 +77,9 @@ export default class CustomersSectionSlider extends Component {
                             fade={true}
                             speed= {800}
                             autoplaySpeed= {3000}
+                            pauseOnHover={false}
+                            // rtl={true}
+                            draggable={false}
                         >
                             <div className="customer-preview-box">
                                 <Image src={circleBg} className='bg'/>

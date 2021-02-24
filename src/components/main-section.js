@@ -20,23 +20,26 @@ const MainSection = () => {
         dots: false,
         arrows:false,
         infinite: true,
+        centerMode:true,
+        centerPadding:"0px",
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable:false,
         fade: true,
-        cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+        // cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
         autoplay: true,
         autoplaySpeed: 3000,
+        // rtl:true,
+        pauseOnHover: false
     };
     return (
         <div className="main-section">
                 <Slider {...settings} className="main-section-slider">
                     <div className="slide-item">
-                        <Row className="justify-content-md-center align-items-center">
-                            <Col >
-                            </Col>
-                            <Col lg="4">
-                                <div>
+                        <Row className="justify-content-md-between align-items-center">
+                            <Col lg="6">
+                                <div className="content-slide">
                                     <h1 className="title">
                                         استقبل طلبات مطعمك اونلاين عبر
                                         <span                                             className="animated-text"
@@ -93,11 +96,9 @@ const MainSection = () => {
                         </Row>
                     </div>
                     <div className="slide-item">
-                        <Row className="justify-content-md-center align-items-center">
-                            <Col >
-                            </Col>
-                            <Col lg="4">
-                                <div>
+                        <Row className="justify-content-md-between align-items-center">
+                            <Col lg="6">
+                                <div className="content-slide">
                                     <h1 className="title">
                                         استقبل طلبات مطعمك اونلاين عبر
                                         <span className="animated-text">تطبيق الموبايل</span>

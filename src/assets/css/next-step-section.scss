@@ -1,12 +1,12 @@
 .next-step-section{
  padding-top: 7rem;
  .slider1{
-  width: 100%;
+  //width: 100%;
   margin-bottom: 3rem;
   margin-top: 1.9rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  //display: flex;
+  //flex-direction: row-reverse;
+  //justify-content: flex-end;
   max-width: 880px;
   margin-right: auto;
   margin-left: auto;
@@ -26,9 +26,9 @@
 
   }
   .slick-slide{
-   width: auto !important;
-   overflow: hidden;
-   margin-left: 2rem;
+   //width: auto !important;
+   //overflow: hidden;
+   //margin-left: 2rem;
    &.slick-active.slick-current{
     .main-slide-item{
      &:before,&:after{
@@ -158,6 +158,7 @@
 
   }
   .slick-slide.slick-active.slick-current{
+   //animation: opacityAnimate 1s alternate;
    .customer-preview-box{
     .image{
      //transform: translate3d(0px, 0, 0px);
@@ -183,5 +184,23 @@
  100% {
   opacity: 1;
   transform: translateY(0);
+ }
+}
+
+
+@keyframes opacityAnimate {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+@keyframes widthAnimate {
+ 0% {
+  width: 0%;
+ }
+ 100% {
+  width: 100%;
  }
 }

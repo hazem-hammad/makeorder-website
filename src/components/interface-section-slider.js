@@ -50,11 +50,12 @@ export default class InterfaceSectionSlider extends Component {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToScroll: 1,
-                    centerMode:false,
-                    infinite: true,
-                    centerPadding: "1px",
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode:true,
+                    infinite: false,
+                    centerPadding: "30px",
+                    rtl:true
                 }
             }
         ]
@@ -68,9 +69,16 @@ export default class InterfaceSectionSlider extends Component {
                             ref={slider => (this.slider2 = slider)}
                             slidesToShow={3}
                             swipeToSlide={true}
-                            focusOnSelect={true}
+                            focusOnSelect={false}
                             responsive={responsive}
-                            className=" margin-right slider1">
+                            className=" margin-right slider1"
+                            pauseOnHover={false}
+                            autoplay={true}
+                            fade={false}
+                            rtl={true}
+                            speed= {800}
+                            autoplaySpeed= {3000}
+                        draggable={false}>
 
 
                             <div className='main-slide-item primary-color'>
@@ -101,10 +109,14 @@ export default class InterfaceSectionSlider extends Component {
                                 className=" customer-slider-preview next-step-slider-preview "
                                 dots={false}
                                 arrows={false}
-                                autoplay={true}
+                                // autoplay={true}
                                 fade={true}
-                                speed= {800}
-                                autoplaySpeed= {3000}
+                                // speed= {800}
+                                // autoplaySpeed= {3000}
+                                draggable={false}
+                                pauseOnHover={false}
+
+
                             >
                                 <div className="content-preview">
                                     <Row>
