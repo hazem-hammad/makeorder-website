@@ -5,6 +5,9 @@ import Col from "react-bootstrap/Col";
 import circleBg from '../assets/images/circle-bg01.png'
 import customerImageSlide01 from '../assets/images/slide-image-customer.png'
 import shopIcon from '../assets/images/shop-icon.svg'
+import iPhoneIcon from '../assets/images/iPhoneX.png'
+import userIcon from '../assets/images/user02.png'
+import usersIcon from '../assets/images/user.png'
 import Image from "react-bootstrap/Image";
 import {Container} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
@@ -27,6 +30,32 @@ export default class NextStepSectionSlider extends Component {
     }
 
     render() {
+        let  responsive= [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToScroll: 1,
+                    centerMode:true,
+                    infinite: true,
+                    centerPadding: "60px",
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
         return (
             <div className="customer-slider horizontal">
                 <Row>
@@ -37,25 +66,24 @@ export default class NextStepSectionSlider extends Component {
                             slidesToShow={4}
                             swipeToSlide={true}
                             focusOnSelect={true}
-                            className=" margin-right slider1"
+                            className=" slider1 "
+                            responsive={responsive}
                         >
-
-
                             <div className='main-slide-item primary-color'>
                                 <h3 className="title">
-                                    <Image src={shopIcon} className='icon'/>
+                                    <Image src={usersIcon} className='icon'/>
                                     <span>الادارة اسهل</span>
                                 </h3>
                             </div>
                             <div className='main-slide-item success-color'>
                                 <h3 className="title">
-                                    <Image src={shopIcon} className='icon'/>
+                                    <Image src={userIcon} className='icon'/>
                                     <span>عميلك اولا</span>
                                 </h3>
                             </div>
                             <div className='main-slide-item warning-color'>
                                 <h3 className="title">
-                                    <Image src={shopIcon} className='icon'/>
+                                    <Image src={iPhoneIcon} className='icon'/>
                                     <span>نوافذ بيع عديدة</span>
                                 </h3>
                             </div>
@@ -72,22 +100,12 @@ export default class NextStepSectionSlider extends Component {
                             asNavFor={this.state.nav2}
                             ref={slider => (this.slider1 = slider)}
                             className=" customer-slider-preview next-step-slider-preview "
-                            centerPadding={"10px"}
-                            draggable= {true}
                             dots={false}
                             arrows={false}
-                            infinite= {true}
-                            pauseOnHover= {false}
-                            swipe= {false}
-                            touchMove= {false}
-                            vertical= {false}
-                            speed= {1000}
-                            autoplaySpeed= {2000}
-                            useTransform= {true}
-                            cssEase= {'cubic-bezier(0.645, 0.045, 0.355, 1.000)'}
-                            adaptiveHeight= {true}
                             autoplay={true}
                             fade={true}
+                            speed= {800}
+                            autoplaySpeed= {3000}
                         >
                             <div className="content-preview">
                                 <Row>

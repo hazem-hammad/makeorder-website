@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css"
 import TypeIt from "typeit-react";
 import Image from "react-bootstrap/Image";
 import mainSectionPic from '../assets/images/mainSectionImage.png'
-import mainSectionPic02 from '../assets/images/mainSectionImage01.png'
+import mainSectionPic02 from '../assets/images/slide02.png'
 import checkIcon from '../assets/images/checkIcon.png'
 
 
@@ -17,15 +17,16 @@ import checkIcon from '../assets/images/checkIcon.png'
 
 const MainSection = () => {
     let settings = {
-        dots: true,
+        dots: false,
+        arrows:false,
         infinite: true,
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        cssEase: 'linear',
+        cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
         autoplay: true,
-        autoplaySpeed: 3300,
+        autoplaySpeed: 3000,
     };
     return (
         <div className="main-section">
@@ -38,6 +39,8 @@ const MainSection = () => {
                                 <div>
                                     <h1 className="title">
                                         استقبل طلبات مطعمك اونلاين عبر
+                                        <span                                             className="animated-text"
+                                        >موقعك الخاص</span>
                                         {/*<TypeIt*/}
                                         {/*    className="animated-text"*/}
                                         {/*    options={{*/}
@@ -46,20 +49,20 @@ const MainSection = () => {
                                         {/*        waitUntilVisible: true*/}
                                         {/*    }}*/}
                                         {/*/>*/}
-                                        <TypeIt
-                                            className="animated-text"
-                                            options={{
-                                                strings: ["موقعك الخاص"],
-                                                speed: 200,
-                                                waitUntilVisible: true,
-                                                loop: true,
-                                            }}
-                                            getBeforeInit={instance => {
-                                                instance
-                                                    .pause(750)
-                                                return instance;
-                                            }}
-                                        />
+                                        {/*<TypeIt*/}
+                                        {/*    className="animated-text"*/}
+                                        {/*    options={{*/}
+                                        {/*        strings: ["موقعك الخاص"],*/}
+                                        {/*        speed: 200,*/}
+                                        {/*        waitUntilVisible: true,*/}
+                                        {/*        loop: true,*/}
+                                        {/*    }}*/}
+                                        {/*    getBeforeInit={instance => {*/}
+                                        {/*        instance*/}
+                                        {/*            .pause(750)*/}
+                                        {/*        return instance;*/}
+                                        {/*    }}*/}
+                                        {/*/>*/}
 
                                     </h1>
                                     <ul className="list-unstyled slider-list">
@@ -82,7 +85,7 @@ const MainSection = () => {
 
                                 </div>
                             </Col>
-                            <Col lg="6">
+                            <Col lg="6" >
                                 <div className="image-demo-box">
                                     <Image src={mainSectionPic} className='image-demo'/>
                                 </div>
@@ -97,22 +100,23 @@ const MainSection = () => {
                                 <div>
                                     <h1 className="title">
                                         استقبل طلبات مطعمك اونلاين عبر
-                                        <TypeIt
-                                            className="animated-text"
-                                            options={{
-                                                strings: ["جاهزين !"],
-                                                speed: 200,
-                                                waitUntilVisible: true,
-                                                loop: true,
-                                                startDelay:3300
+                                        <span className="animated-text">تطبيق الموبايل</span>
+                                        {/*<TypeIt*/}
+                                        {/*    className="animated-text"*/}
+                                        {/*    options={{*/}
+                                        {/*        strings: ["جاهزين !"],*/}
+                                        {/*        speed: 200,*/}
+                                        {/*        waitUntilVisible: true,*/}
+                                        {/*        loop: true,*/}
+                                        {/*        startDelay:3300*/}
 
-                                            }}
-                                            getBeforeInit={instance => {
-                                                instance
-                                                    .pause(750)
-                                                return instance;
-                                            }}
-                                        />
+                                        {/*    }}*/}
+                                        {/*    getBeforeInit={instance => {*/}
+                                        {/*        instance*/}
+                                        {/*            .pause(750)*/}
+                                        {/*        return instance;*/}
+                                        {/*    }}*/}
+                                        {/*/>*/}
                                     </h1>
                                     <ul className="list-unstyled slider-list">
                                         <li>
@@ -134,7 +138,7 @@ const MainSection = () => {
 
                                 </div>
                             </Col>
-                            <Col lg="6">
+                            <Col lg="6" >
                                 <div className="image-demo-box">
                                     <Image src={mainSectionPic02} className='image-demo'/>
                                 </div>

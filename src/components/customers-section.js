@@ -10,7 +10,8 @@ const CustomersSection = () => {
                 <p className="main-paragraph">
                      من الزيارة الأولى إلى موقع مطعمك، نعمل علي إسعاد العملاء في كل خطوة من خطوات طلب الاوردر الي الاستلام
                 </p>
-                <CustomersSectionSlider></CustomersSectionSlider>
+                <CustomersSectionSlider>
+                </CustomersSectionSlider>
             </Container>
         </div>
     )

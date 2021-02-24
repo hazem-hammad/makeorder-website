@@ -4,7 +4,7 @@ import InterfaceSectionSlider from './interface-section-slider'
 
 const InterfaceSection = () => {
     return (
-        <div className="customers-section next-step-section bg-white">
+        <div className="customers-section interface-section bg-white">
             <Container>
                 <div className="center-mode">
                     <h2 className="main-title"> واجهة تحكم لإدارة مطعمك</h2>
@@ -13,6 +13,7 @@ const InterfaceSection = () => {
                 </div>
                 <InterfaceSectionSlider>
                 </InterfaceSectionSlider>
+
             </Container>
         </div>
     )

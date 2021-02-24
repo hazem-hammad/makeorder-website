@@ -1,0 +1,130 @@
+.features-section{
+  overflow: hidden;
+  padding: 6.2rem 0 2rem 0;
+  .content-header{
+    max-width: 700px;
+    margin-bottom: 3.2rem;
+    .main-paragraph{
+      max-width: 580px;
+    }
+  }
+  .slick-slide{
+    border: 1.5rem solid #fff;
+  }
+  //.slick-track{
+  //  .slick-slide{
+  //    &:nth-child(even) {
+  //      .main-slide-item {
+  //        background-color: #eefbf4;
+  //        }
+  //      }
+  //    &:nth-child(odd) {
+  //      .main-slide-item {
+  //        background-color: #fef2f0;
+  //      }
+  //    }
+  //  }
+  //}
+  .main-slide-item{
+    padding: 2rem;
+    border-radius: 25px;
+    position: relative;
+
+
+    .title{
+      margin-top: 15px;
+      font-size: rem(25);
+      color: #262847 !important;
+      font-family: $font-bold;
+    }
+    .paragraph{
+      color: #262847 !important;
+      font-size: rem(22);
+    }
+    .icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      img{
+        width: 35px;
+        height: 100%;
+        object-fit: contain;
+        margin-top: 2px;
+      }
+    }
+    .action {
+      margin-top: 15px;
+      .mdi-icon{
+        margin-right: 6px;
+      }
+    }
+
+    &.primary-color{
+      background-color: #fef2f0;
+      .icon{
+        background: #F15C41;
+      }
+      .action {
+        color: #F15C41;
+      }
+    }
+    &.warning-color{
+      background-color: #fffbf0;
+      .icon{
+        background: #FFC847;
+      }
+      .action {
+        color: #FFC847;
+      }
+    }
+    &.success-color{
+      background-color: #eefbf4;
+      .icon{
+        background: #27CD74;
+      }
+      .action {
+        color: #27CD74;
+      }
+    }
+
+  }
+  .image-preview{
+    width:331px;
+    height: 300px;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -3rem;
+  }
+  .slick-dots li{
+    width: 40px;
+    height: 8px;
+    button{
+      width: 40px;
+      height: 8px;
+
+      &:before{
+        width: 40px;
+        height: 7px;
+        content: '';
+        background: rgba(#7C7E90,0.1);
+        border-radius: 30px;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+
+      }
+    }
+    &.slick-active{
+      button{
+        &:before{
+          background-color: #F15C41;
+        }
+      }
+    }
+  }
+}
