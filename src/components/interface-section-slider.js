@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import circleBg from '../assets/images/circle-bg-02.png'
 import customerImageSlide01 from '../assets/images/slide-image-customer.png'
-import shopIcon from '../assets/images/shop-icon.svg'
+// import shopIcon from '../assets/images/shop-icon.svg'
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 
@@ -81,19 +81,19 @@ export default class InterfaceSectionSlider extends Component {
                         draggable={false}>
 
 
-                            <div className='main-slide-item primary-color'>
+                            <div className='main-slide-item primary-color'  onClick={(e) => {this.slider2.slickGoTo('2')}}>
                                 <h3 className="title"><span> إدارة العملاء </span></h3>
                                 <p className="paragraph">
                                      ستحصل على المعلومات الكاملة لعملائك, فكل زبون له صفحة بكل معلوماتة وكذلك تاريخ المشتريات مع امكانية اضافة ملاحظات
                                 </p>
                             </div>
 
-                            <div className='main-slide-item success-color'>
+                            <div className='main-slide-item success-color'  onClick={(e) => {this.slider2.slickGoTo('1')}}>
                                 <h3 className="title"><span> إدارة الفروع </span></h3>
                                 <p className="paragraph">
                                      تمكن من اضافة الفروع وتحديد النطاق الجغرافي للتوصيل وساعات العمل وخيارات الدفع والتوصيل مع التحكم فى حاله الفرع     </p>
                             </div>
-                            <div className='main-slide-item warning-color'>
+                            <div className='main-slide-item warning-color'  onClick={(e) => {this.slider2.slickGoTo('0')}}>
                                 <h3 className="title"> تطبيق الإدارة العلي </h3>
                                 <p className="paragraph">
                                      تطبيق للإدارة العليا للمطعم تبقيه دائما مطلع على عدد الطلبيات اليوم والأرباح وعدد العملاء والعديد من الإحصائيات المحدثه لحظياً

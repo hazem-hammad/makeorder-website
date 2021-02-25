@@ -29,16 +29,16 @@ const Footer = () => {
                                 ميك اوردر
                             </div>
                             <ul className="list-unstyled list-inline list-social">
-                                <li><a href="#">
+                                <li><a href="/">
                                     <Icon path={mdiFacebook} size={1} className="mdi-icon"/>
                                 </a></li>
-                                <li><a href="#">
+                                <li><a href="/">
                                     <Icon path={mdiLinkedin} size={1} className="mdi-icon"/>
                                 </a></li>
-                                <li><a href="#">
+                                <li><a href="/">
                                     <Icon path={mdiTwitter} size={1} className="mdi-icon"/>
                                 </a></li>
-                                <li><a href="#">
+                                <li><a href="/">
                                     <Icon path={mdiYoutube} size={1} className="mdi-icon"/>
                                 </a></li>
                             </ul>
@@ -47,14 +47,14 @@ const Footer = () => {
                             <Row>
                                 <Col>
                                     <ul className="list-unstyled">
-                                        <li><a href="#" className="footer-links">المميزات </a></li>
-                                        <li><a href="#" className="footer-links"> اتصل بنا </a></li>
+                                        <li><a href="/" className="footer-links">المميزات </a></li>
+                                        <li><a href="/" className="footer-links"> اتصل بنا </a></li>
                                     </ul>
                                 </Col>
                                 <Col>
                                     <ul className="list-unstyled">
-                                        <li><a href="#" className="footer-links"> الاسعار </a></li>
-                                        <li><a href="#" className="footer-links">  الدخول </a></li>
+                                        <li><a href="/" className="footer-links"> الاسعار </a></li>
+                                        <li><a href="/" className="footer-links">  الدخول </a></li>
                                     </ul>
                                 </Col>
                                 <Col>

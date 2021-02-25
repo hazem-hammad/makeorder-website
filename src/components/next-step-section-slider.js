@@ -9,7 +9,7 @@ import iPhoneIcon from '../assets/images/iPhoneX.png'
 import userIcon from '../assets/images/user02.png'
 import usersIcon from '../assets/images/user.png'
 import Image from "react-bootstrap/Image";
-import {Container} from "react-bootstrap";
+// import {Container} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 
@@ -18,7 +18,9 @@ export default class NextStepSectionSlider extends Component {
         super(props);
         this.state = {
             nav1: null,
-            nav2: null
+            nav2: null,
+            slideIndex: 0,
+            updateCount: 0
         };
     }
 
@@ -28,8 +30,16 @@ export default class NextStepSectionSlider extends Component {
             nav2: this.slider2
         });
     }
+    handleClick = () => {
+    }
+
 
     render() {
+        // let settings={
+        //     afterChange: () =>
+        //         this.setState(state => ({ updateCount: state.updateCount + 1 })),
+        //     beforeChange: (current, next) => this.setState({ slideIndex: next })
+        // }
         let  responsive= [
             {
                 breakpoint: 1024,
@@ -85,27 +95,27 @@ export default class NextStepSectionSlider extends Component {
                             speed= {800}
                             autoplaySpeed= {3000}
                         >
-                            <div className='main-slide-item info-color'>
+                            <div className='main-slide-item info-color'   onClick={(e) => {this.slider2.slickGoTo('3')}}>
                                 <h3 className="title">
                                     <Image src={shopIcon} className='icon'/>
                                     <span>مطعمك اونلاين</span>
                                 </h3>
                             </div>
 
-                            <div className='main-slide-item warning-color'>
+                            <div className='main-slide-item warning-color' onClick={(e) => {this.slider2.slickGoTo('2')}}>
                                 <h3 className="title">
                                     <Image src={iPhoneIcon} className='icon'/>
                                     <span>نوافذ بيع عديدة</span>
                                 </h3>
                             </div>
-                            <div className='main-slide-item success-color'>
+                            <div className='main-slide-item success-color' onClick={(e) => {this.slider2.slickGoTo('1')}}>
                                 <h3 className="title">
                                     <Image src={userIcon} className='icon'/>
                                     <span>عميلك اولا</span>
                                 </h3>
                             </div>
 
-                            <div className='main-slide-item primary-color'>
+                            <div className='main-slide-item primary-color' onClick={(e) => {this.slider2.slickGoTo('0')}}>
                                 <h3 className="title">
                                     <Image src={usersIcon} className='icon'/>
                                     <span>الادارة اسهل</span>
@@ -196,7 +206,7 @@ export default class NextStepSectionSlider extends Component {
                                         </div>
                                     </Col>
                                     <Col lg="7">
-                                        <div className="customer-preview-box info-color">
+                                        <div className="customer-preview-box">
                                             <Image src={circleBg} className='bg'/>
                                             <Image src={customerImageSlide01} className='image'/>
                                             {/*<div className='background'>*/}

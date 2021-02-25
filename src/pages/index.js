@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
 import Layout from '../components/layout'
 import MainSection from'../components/main-section'
 import CustomersSection from'../components/customers-section'
@@ -7,7 +7,6 @@ import NextStepSection from'../components/next-step-section'
 import InterfaceSection from'../components/interface-section'
 import FeaturesSection from'../components/features-section'
 import Footer from'../components/footer'
-import Container from "react-bootstrap/Container";
 
 
 

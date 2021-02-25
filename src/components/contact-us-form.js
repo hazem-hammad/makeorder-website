@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import {Col, Container, Row, Form, Button} from "react-bootstrap";
 import Icon from "@mdi/react";
 import {mdiFacebook, mdiLinkedin, mdiTwitter, mdiYoutube} from "@mdi/js";
@@ -71,16 +70,16 @@ const ContactUsForm = () => {
                            <div>
                                <p className="title">وسائل التواصل الاجتماعى</p>
                                <ul className="list-unstyled list-inline list-social">
-                                   <li><a href="#">
+                                   <li><a href="/">
                                        <Icon path={mdiFacebook} size={1} className="mdi-icon"/>
                                    </a></li>
-                                   <li><a href="#">
+                                   <li><a href="/">
                                        <Icon path={mdiLinkedin} size={1} className="mdi-icon"/>
                                    </a></li>
-                                   <li><a href="#">
+                                   <li><a href="/">
                                        <Icon path={mdiTwitter} size={1} className="mdi-icon"/>
                                    </a></li>
-                                   <li><a href="#">
+                                   <li><a href="/">
                                        <Icon path={mdiYoutube} size={1} className="mdi-icon"/>
                                    </a></li>
                                </ul>

@@ -1,12 +1,12 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Slider from "react-slick";
 import Button from "react-bootstrap/Button";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import TypeIt from "typeit-react";
+// import TypeIt from "typeit-react";
 import Image from "react-bootstrap/Image";
 import mainSectionPic from '../assets/images/mainSectionImage.png'
 import mainSectionPic02 from '../assets/images/slide02.png'
