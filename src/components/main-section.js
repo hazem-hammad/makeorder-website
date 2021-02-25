@@ -37,114 +37,127 @@ const MainSection = () => {
         <div className="main-section">
                 <Slider {...settings} className="main-section-slider">
                     <div className="slide-item">
-                        <Row className="justify-content-md-between align-items-center">
-                            <Col lg="6">
-                                <div className="content-slide">
-                                    <h1 className="title">
-                                        استقبل طلبات مطعمك اونلاين عبر
-                                        <span                                             className="animated-text"
-                                        >موقعك الخاص</span>
-                                        {/*<TypeIt*/}
-                                        {/*    className="animated-text"*/}
-                                        {/*    options={{*/}
-                                        {/*        strings: ["موقعك الخاص"],*/}
-                                        {/*        speed: 100,*/}
-                                        {/*        waitUntilVisible: true*/}
-                                        {/*    }}*/}
-                                        {/*/>*/}
-                                        {/*<TypeIt*/}
-                                        {/*    className="animated-text"*/}
-                                        {/*    options={{*/}
-                                        {/*        strings: ["موقعك الخاص"],*/}
-                                        {/*        speed: 200,*/}
-                                        {/*        waitUntilVisible: true,*/}
-                                        {/*        loop: true,*/}
-                                        {/*    }}*/}
-                                        {/*    getBeforeInit={instance => {*/}
-                                        {/*        instance*/}
-                                        {/*            .pause(750)*/}
-                                        {/*        return instance;*/}
-                                        {/*    }}*/}
-                                        {/*/>*/}
+                        {/*style={{backgroundImage: `url(${mainSectionPic})`}}*/}
+                        <div className="background">
+                            <div className="container">
+                                <Row className="justify-content-md-between align-items-center " >
+                                    <Col lg="6">
+                                        <div className="content-slide">
+                                            <h1 className="title">
+                                                استقبل طلبات مطعمك اونلاين عبر
+                                                <span                                             className="animated-text"
+                                                >موقعك الخاص</span>
+                                                {/*<TypeIt*/}
+                                                {/*    className="animated-text"*/}
+                                                {/*    options={{*/}
+                                                {/*        strings: ["موقعك الخاص"],*/}
+                                                {/*        speed: 100,*/}
+                                                {/*        waitUntilVisible: true*/}
+                                                {/*    }}*/}
+                                                {/*/>*/}
+                                                {/*<TypeIt*/}
+                                                {/*    className="animated-text"*/}
+                                                {/*    options={{*/}
+                                                {/*        strings: ["موقعك الخاص"],*/}
+                                                {/*        speed: 200,*/}
+                                                {/*        waitUntilVisible: true,*/}
+                                                {/*        loop: true,*/}
+                                                {/*    }}*/}
+                                                {/*    getBeforeInit={instance => {*/}
+                                                {/*        instance*/}
+                                                {/*            .pause(750)*/}
+                                                {/*        return instance;*/}
+                                                {/*    }}*/}
+                                                {/*/>*/}
 
-                                    </h1>
-                                    <ul className="list-unstyled slider-list">
-                                        <li>
-                                            <Image src={checkIcon} className='icons'/>
-                                            <p>
-                                                <strong>بدون عمولة</strong>
-                                                ، وفر اكبر قدر من ارباحك
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <Image src={checkIcon} className='icons'/>
-                                            <p>
-                                                <strong>خلال دقائق</strong>
-                                                ، استقبل الطلبات اونلاين خلال ٣٠ دقيقة
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <Button variant="warning" size="lg"> احصل علي ٣٠ يوم مجانا!</Button>
+                                            </h1>
+                                            <ul className="list-unstyled slider-list">
+                                                <li>
+                                                    <Image src={checkIcon} className='icons'/>
+                                                    <p>
+                                                        <strong>بدون عمولة</strong>
+                                                        ، وفر اكبر قدر من ارباحك
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <Image src={checkIcon} className='icons'/>
+                                                    <p>
+                                                        <strong>خلال دقائق</strong>
+                                                        ، استقبل الطلبات اونلاين خلال ٣٠ دقيقة
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <Button variant="warning" size="lg"> احصل علي ٣٠ يوم مجانا!</Button>
 
-                                </div>
-                            </Col>
-                            <Col lg="6" >
-                                <div className="image-demo-box">
-                                    <Image src={mainSectionPic} className='image-demo'/>
-                                </div>
-                            </Col>
-                        </Row>
+                                        </div>
+                                    </Col>
+                                    <Col lg="6" >
+                                        <div className="image-demo-box">
+                                            {/*<Image src={mainSectionPic} className='image-demo'/>*/}
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                            <Image src={mainSectionPic} className='image-demo-left'/>
+                        </div>
                     </div>
-                    <div className="slide-item">
-                        <Row className="justify-content-md-between align-items-center">
-                            <Col lg="6">
-                                <div className="content-slide">
-                                    <h1 className="title">
-                                        استقبل طلبات مطعمك اونلاين عبر
-                                        <span className="animated-text">تطبيق الموبايل</span>
-                                        {/*<TypeIt*/}
-                                        {/*    className="animated-text"*/}
-                                        {/*    options={{*/}
-                                        {/*        strings: ["جاهزين !"],*/}
-                                        {/*        speed: 200,*/}
-                                        {/*        waitUntilVisible: true,*/}
-                                        {/*        loop: true,*/}
-                                        {/*        startDelay:3300*/}
+                    <div className="slide-item" >
+                        {/*style={{backgroundImage: `url(${mainSectionPic02})`}}*/}
+                        <div className="background">
+                            <div className="container">
+                            <Row className="justify-content-md-between align-items-center">
+                                <Col lg="6">
+                                    <div className="content-slide" >
+                                        <h1 className="title">
+                                            استقبل طلبات مطعمك اونلاين عبر
+                                            <span className="animated-text">تطبيق الموبايل</span>
+                                            {/*<TypeIt*/}
+                                            {/*    className="animated-text"*/}
+                                            {/*    options={{*/}
+                                            {/*        strings: ["جاهزين !"],*/}
+                                            {/*        speed: 200,*/}
+                                            {/*        waitUntilVisible: true,*/}
+                                            {/*        loop: true,*/}
+                                            {/*        startDelay:3300*/}
 
-                                        {/*    }}*/}
-                                        {/*    getBeforeInit={instance => {*/}
-                                        {/*        instance*/}
-                                        {/*            .pause(750)*/}
-                                        {/*        return instance;*/}
-                                        {/*    }}*/}
-                                        {/*/>*/}
-                                    </h1>
-                                    <ul className="list-unstyled slider-list">
-                                        <li>
-                                            <Image src={checkIcon} className='icons'/>
-                                            <p>
-                                                <strong>بدون عمولة</strong>
-                                                ، وفر اكبر قدر من ارباحك
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <Image src={checkIcon} className='icons'/>
-                                            <p>
-                                                <strong>خلال دقائق</strong>
-                                                ، استقبل الطلبات اونلاين خلال ٣٠ دقيقة
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <Button variant="warning" size="lg"> احصل علي ٣٠ يوم مجانا!</Button>
+                                            {/*    }}*/}
+                                            {/*    getBeforeInit={instance => {*/}
+                                            {/*        instance*/}
+                                            {/*            .pause(750)*/}
+                                            {/*        return instance;*/}
+                                            {/*    }}*/}
+                                            {/*/>*/}
+                                        </h1>
+                                        <ul className="list-unstyled slider-list">
+                                            <li>
+                                                <Image src={checkIcon} className='icons'/>
+                                                <p>
+                                                    <strong>بدون عمولة</strong>
+                                                    ، وفر اكبر قدر من ارباحك
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <Image src={checkIcon} className='icons'/>
+                                                <p>
+                                                    <strong>خلال دقائق</strong>
+                                                    ، استقبل الطلبات اونلاين خلال ٣٠ دقيقة
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <Button variant="warning" size="lg"> احصل علي ٣٠ يوم مجانا!</Button>
 
-                                </div>
-                            </Col>
-                            <Col lg="6" >
-                                <div className="image-demo-box">
-                                    <Image src={mainSectionPic02} className='image-demo'/>
-                                </div>
-                            </Col>
-                        </Row>
+                                    </div>
+                                </Col>
+                                <Col lg="6" >
+                                    <div className="image-demo-box">
+                                        {/*<Image src={mainSectionPic02} className='image-demo'/>*/}
+                                    </div>
+                                </Col>
+                            </Row>
+                            </div>
+                            <Image src={mainSectionPic02} className='image-demo-left'/>
+
+                        </div>
                     </div>
                 </Slider>
         </div>

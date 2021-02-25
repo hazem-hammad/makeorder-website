@@ -7,6 +7,8 @@ import NextStepSection from'../components/next-step-section'
 import InterfaceSection from'../components/interface-section'
 import FeaturesSection from'../components/features-section'
 import Footer from'../components/footer'
+import Container from "react-bootstrap/Container";
+
 
 
 import "../styles.scss";
