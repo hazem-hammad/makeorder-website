@@ -5,6 +5,8 @@ import Footer from'../components/footer'
 import ContactUsHeader from '../components/contact-us-header'
 import ContactUsForm from '../components/contact-us-form'
 import SupportersSectionSlider from '../components/supporters-section-slider'
+import IntegrationSection from '../components/integration-section'
+import AppsPaymentSection from '../components/apps-payment-section'
 import {Container} from "react-bootstrap";
 
 
@@ -21,6 +23,10 @@ const ContactUs = () => {
               <Container>
                   <SupportersSectionSlider>
                   </SupportersSectionSlider>
+                  <IntegrationSection>
+                  </IntegrationSection>
+                  <AppsPaymentSection>
+                  </AppsPaymentSection>
               </Container>
           </div>
         <Footer>

@@ -24,18 +24,18 @@ export default class SupportersSectionSlider extends Component {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     centerMode:true,
                     infinite: true,
                     centerPadding: "60px",
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                     centerMode:true,
                     infinite: true,
                     centerPadding: "60px",

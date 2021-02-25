@@ -1,4 +1,6 @@
 .contact-us{
+  padding-bottom: 3rem;
+
   &-header{
     height: 600px;
     background: #F9FBFF;
@@ -40,8 +42,13 @@
     }
   }
 }
+.custom-width{
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .supporters-slider{
-  padding: 3rem 0;
+  padding: 6rem 0 2rem 0;
   &-title{
     font-size: rem(21);
     font-family: $font-semi-bold;
@@ -54,7 +61,75 @@
   }
 
 }
+.integration-slider{
+  background: #F9FBFF;
+  border-radius: 25px;
+  padding: 2rem 0 ;
+  margin-bottom: 2rem;
+  .title{
+    font-family: $font-bold;
+    font-size: rem(23);
+    padding-right: 2rem;
+  }
+  span{
+    width: 80px;
+    height: 80px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 45px rgba(27, 65, 123, 0.1);
+    border-radius: 24px;
+    margin: 1.5rem auto;
+    //display: block;
+  }
+  .image-preview{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+}
 
+.app-logos{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  div{
+    width: 33.33%;
+    span{
+      margin: 8px auto;
+      background-color: transparent;
+      box-shadow: none;
+      height: 60px;
+    }
+    .image-preview{
+      width: 90px;
+      height: 60px;
+    }
+  }
+}
+.payments{
+  div{
+    span{
+      width: 100px;
+      height: 30px;
+
+    }
+    .image-preview{
+      //width: auto;
+      //height: auto;
+      //max-height: 30px;
+      //max-width: 60px;
+      width: 100px;
+      height: 30px;
+
+    }
+  }
+}
+.integration-section{
+  padding-top: 7rem;
+}
 .form-control{
   border-color: #E3E6EE;
   border-radius: 12px;
