@@ -1,11 +1,30 @@
 import React from "react";
-import Header from "../components/header";
+import { Link } from "gatsby";
+import Layout from '../components/layout'
+import Footer from'../components/footer'
+import ContactUsHeader from '../components/contact-us-header'
+import ContactUsForm from '../components/contact-us-form'
+import SupportersSectionSlider from '../components/supporters-section-slider'
+import {Container} from "react-bootstrap";
+
 
 const ContactUs = () => {
   return (
-    <div>
-      <h1>Contact Us !!!</h1>
-      <Header />
+      <div className="main-wrapper rtl">
+        <Layout>
+        </Layout>
+          <div className="contact-us">
+              <ContactUsHeader>
+              </ContactUsHeader>
+              <ContactUsForm>
+              </ContactUsForm>
+              <Container>
+                  <SupportersSectionSlider>
+                  </SupportersSectionSlider>
+              </Container>
+          </div>
+        <Footer>
+        </Footer>
     </div>
   );
 };

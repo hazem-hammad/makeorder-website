@@ -168,19 +168,6 @@ a{
     font-family: $font-bold;
     font-size: rem(30);
   }
-  .list-social{
-    padding: 0;
-    display: flex;
-    margin-top: 1.6rem;
-    li{
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-    a{
-      color: #bebfc8;
-      display: block;
-    }
-  }
   ul{
     padding: 0;
   }
@@ -206,5 +193,18 @@ a{
     .footer-p{
       font-size: rem(16);
     }
+  }
+}
+.list-social{
+  padding: 0;
+  display: flex;
+  margin-top: 1.6rem;
+  li{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  a{
+    color: #bebfc8;
+    display: block;
   }
 }

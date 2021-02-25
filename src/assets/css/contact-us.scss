@@ -1,0 +1,63 @@
+.contact-us{
+  &-header{
+    height: 600px;
+    background: #F9FBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center-mode {
+      margin-top: -3rem;
+      .main-paragraph{
+        max-width: 418px !important;
+      }
+    }
+  }
+  &-form{
+    margin-top: -10rem;
+    .box{
+      background: #FFFFFF;
+      border-radius: 25px;
+      padding: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      .subtitle{
+        color: #7C7E90;
+      }
+      .title{
+        font-size: rem(22);
+        font-family: $font-semi-bold;
+      }
+
+      .list-social{
+        li{
+          a{
+            color: #7C7E90;
+          }
+        }
+      }
+
+    }
+  }
+}
+.supporters-slider{
+  padding: 3rem 0;
+  &-title{
+    font-size: rem(21);
+    font-family: $font-semi-bold;
+    margin-bottom: 2.4rem;
+  }
+  .image-preview{
+    width: 150px !important;
+    height: 40px;
+    object-fit: contain;
+  }
+
+}
+
+.form-control{
+  border-color: #E3E6EE;
+  border-radius: 12px;
+  height: 48px;
+
+}

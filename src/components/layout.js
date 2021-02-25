@@ -68,7 +68,7 @@ export default class Layout extends Component {
                                 <Link to="/" className="nav-link">الرئيسية</Link>
                                 <Link to="/" className="nav-link">المميزات</Link>
                                 <Link to="/" className="nav-link">الأسعار</Link>
-                                <Link to="/" className="nav-link">اتصل بنا</Link>
+                                <Link to="/contact-us" className="nav-link">اتصل بنا</Link>
                             </Nav>
                             <div>
                                 <Link to="/about" className="navbar-actions">الدخول</Link>
