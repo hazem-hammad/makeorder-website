@@ -66,7 +66,7 @@ export default class Layout extends Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Link to="/" className="nav-link">الرئيسية</Link>
-                                <Link to="/" className="nav-link">المميزات</Link>
+                                <Link to="/features" className="nav-link">المميزات</Link>
                                 <Link to="/pricing" className="nav-link">الأسعار</Link>
                                 <Link to="/contact-us" className="nav-link">اتصل بنا</Link>
                             </Nav>
