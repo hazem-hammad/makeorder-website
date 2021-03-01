@@ -9,11 +9,15 @@ import PackagesSection from '../components/packages-section'
 import ComparePackagesSection from '../components/compare-packages-section'
 import FaqsSection from '../components/faqs-section'
 import {Container} from "react-bootstrap";
+import PageLoader from '../components/page-loader'
+
 
 
 const Pricing = () => {
   return (
       <div className="main-wrapper rtl">
+        <PageLoader>
+        </PageLoader>
         <Layout>
         </Layout>
           <div>

@@ -1,8 +1,7 @@
 import React from "react";
-import {Container,Tabs,Tab , Image} from "react-bootstrap";
+import {Container,Tabs,Tab , Image , Form} from "react-bootstrap";
 import PackageTable from './package-table'
 import wafarIcon from "../assets/images/wafar.png";
-import lightsIcon from "../assets/images/lights.png";
 
 const PackagesSection = () => {
   return (
@@ -13,6 +12,36 @@ const PackagesSection = () => {
             اختار الباقه المناسبه , سجل قى 10 ثوان , قم بالترقيه او الالغاء فى اى وقت
              </p>
         </div>
+          {/*<div>*/}
+          {/*    <div key={`default-radio`} className="mb-3 pricing-tabs">*/}
+          {/*        <div className='buttons'>*/}
+          {/*            <Form.Check*/}
+          {/*                className={'radio-button'}*/}
+          {/*                type='radio'*/}
+          {/*                id={`yearly`}*/}
+          {/*                label={`سنوى`}*/}
+          {/*                name={'ss'}*/}
+          {/*            />*/}
+          {/*            <span>سنوى</span>*/}
+          {/*        </div>*/}
+          {/*        <div className='buttons'>*/}
+          {/*            <Form.Check*/}
+          {/*                className={'radio-button'}*/}
+          {/*                type='radio'*/}
+          {/*                label={`شهرى`}*/}
+          {/*                id={`monthly`}*/}
+          {/*                name={'ss'}*/}
+          {/*            />*/}
+          {/*            <span>شهرى</span>*/}
+
+          {/*        </div>*/}
+
+
+
+          {/*    </div>*/}
+
+          {/*</div>*/}
+
           <Container className="relative">
               <div className="tabs-width">
                   <Image src={wafarIcon} className='wafarIcon'/>

@@ -6,11 +6,15 @@ import CustomersSection from '../components/customers-section'
 import BranchesSection from '../components/branches-section'
 import OffersSection from '../components/offers-section'
 import FeatureAppsPaymentSection from '../components/feature-apps-payment-section'
+import PageLoader from '../components/page-loader'
+
 
 
 const Features = () => {
     return (
         <div className="main-wrapper rtl">
+            <PageLoader>
+            </PageLoader>
             <Layout>
             </Layout>
 

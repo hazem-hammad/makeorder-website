@@ -239,3 +239,32 @@
     padding: 4rem 0 5rem 0;
   }
 }
+
+
+.pricing-tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > .buttons{
+    position: relative;
+    margin: 0.2rem;
+    font-weight: 600;
+    font-size: 1.1875rem;
+    min-width: 120px;
+    background-color: #f44336;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 14px;
+    &:hover{
+      cursor: pointer;
+    }
+    .radio-button{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+}

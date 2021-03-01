@@ -8,11 +8,16 @@ import SupportersSectionSlider from '../components/supporters-section-slider'
 import IntegrationSection from '../components/integration-section'
 import AppsPaymentSection from '../components/apps-payment-section'
 import {Container} from "react-bootstrap";
+import PageLoader from '../components/page-loader'
+
+
 
 
 const ContactUs = () => {
   return (
       <div className="main-wrapper rtl">
+          <PageLoader>
+          </PageLoader>
         <Layout>
         </Layout>
           <div className="contact-us">
