@@ -29,10 +29,13 @@ export default class Layout extends Component {
             <div className={className}>
                 <Navbar bg="#fff" expand="lg">
                     <Container>
-                        <Navbar.Brand href="/">
-                            <Image src={logo} roundedCircle />
-                            ميك اوردر
-                        </Navbar.Brand>
+                        <Link to='/'>
+                            <Navbar.Brand>
+                                <Image src={logo} roundedCircle />
+                                ميك اوردر
+                            </Navbar.Brand>
+                        </Link>
+
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
