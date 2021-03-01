@@ -29,6 +29,9 @@
       display: none;
     }
   }
+  .branches-section .main-slide-item .title {
+    justify-content: flex-start;
+  }
 }
 
 
@@ -151,6 +154,12 @@
     margin-bottom: 10px;
     .body{
       min-height: 100px;
+    }
+  }
+  .offers-section{
+    padding: 1rem 1.5rem;
+     .content-slide {
+      margin: 2rem 0;
     }
   }
 

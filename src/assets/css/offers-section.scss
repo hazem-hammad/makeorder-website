@@ -6,9 +6,16 @@
   .title{
     margin-bottom: 1rem;
   }
+  &.bg-navy{
+
+    .main-paragraph{
+      color: #fff;
+    }
+  }
   .main-paragraph{
-    color: #fff;
     margin-bottom: 3rem;
+    max-width: 461px;
+
   }
   .main-paragraph-title{
     font-size: rem(25);
@@ -43,6 +50,14 @@
     /* transform: translateY(-50%); */
     bottom: 0;
     margin-bottom: -6rem;
+  }
+  .list-social{
+    a{
+      color: #000;
+      &:hover{
+        color: #27CD74 !important;
+      }
+    }
   }
 }
 

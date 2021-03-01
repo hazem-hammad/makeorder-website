@@ -112,3 +112,83 @@
  }
 
 }
+
+.feature-apps-payment-section{
+  .integration-slider{
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    //margin: 15px 15px 2.3rem 15px;
+    &:after{
+      content: "";
+      width: 150%;
+      height: 245px;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      background: linear-gradient(
+                      180deg
+              , rgba(249, 251, 255, 0) 13.06%, rgba(#F9FBFF,0.5) 70.43%);
+      z-index: -1;
+    }
+    .image-preview-background{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      transform: translateY(65%) scale(1.2) rotate(-62deg);
+      z-index: -1;
+      object-fit: contain;
+    }
+    .logo-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      > div{
+        max-width: 33%;
+        width: 100%;
+      }
+    }
+    .title{
+      font-size: rem(30) !important;
+      padding-right: 0;
+      font-family: $font-semi-bold;
+    }
+    .subtitle{
+      font-size: rem(24);
+    }
+    &.second-slider{
+      .logo-box{
+        margin-top: 5.5rem;
+      }
+    }
+    &.card2{
+      //margin-top: 7rem;
+      .image-preview-background{
+        filter: invert(61%) sepia(71%) saturate(450%) hue-rotate(95deg) brightness(92%) contrast(93%);
+        //transform: translateY(65%) translateX(60%) scale(1.2) rotate(162deg);
+        transform: translateY(55%) translateX(60%) scale(1) rotate(130deg);
+      }
+    }
+    &.card3{
+      margin-top: 7rem;
+      .image-preview-background{
+        transform: translateY(55%) translateX(-60%) scale(1) rotate(130deg);
+
+      }
+    }
+    &.card4{
+      .image-preview-background {
+        transform: translateY(65%) scale(1.1) rotate(
+                        106deg
+        );
+        opacity: 0.1;
+      }
+    }
+  }
+
+
+}
