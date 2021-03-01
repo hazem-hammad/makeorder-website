@@ -17,9 +17,13 @@ const IndexPage = () => {
   <div className="main-wrapper rtl">
      <Layout></Layout>
      <MainSection></MainSection>
-     <CustomersSection></CustomersSection>
+     <CustomersSection
+     className='ss'
+     bg='bg-pink'
+     title="أمنح زبائنك تجربة جديدة رائعة"
+     subtitle="من الزيارة الأولى إلى موقع مطعمك، نعمل علي إسعاد العملاء في كل خطوة من خطوات طلب الاوردر الي الاستلام"></CustomersSection>
      <NextStepSection></NextStepSection>
-     <InterfaceSection></InterfaceSection>
+     <InterfaceSection className=""></InterfaceSection>
      <FeaturesSection></FeaturesSection>
      <Footer></Footer>
   </div>

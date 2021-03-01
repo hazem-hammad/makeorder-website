@@ -35,7 +35,7 @@ export default class AppsPaymentSection extends Component {
         return (
             <div className="custom-width">
                 <Row>
-                    <Col lg="6">
+                    <Col md='6' lg="6">
                         <div className="integration-slider">
                             <p className="title">تطبيقات التوصيل</p>
                             <div className='app-logos'>
@@ -61,7 +61,7 @@ export default class AppsPaymentSection extends Component {
                             </div>
                         </div>
                     </Col>
-                    <Col lg="6">
+                    <Col md='6' lg="6">
                         <div className="integration-slider">
                             <p className="title">خيارات الدفع</p>
                             <div className='app-logos payments'>

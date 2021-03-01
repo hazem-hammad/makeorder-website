@@ -144,13 +144,31 @@
   }
 
 }
-//@keyframes backgroundAnimate {
-//  0% {
-//    //opacity: 0;
-//   background-position-y: 100%;
-//  }
-//  100% {
-//    //opacity: 1;
-//    background-position-y: 50%;
-//  }
-//}
+.feature-main-section{
+  background: #F9FBFF;
+  .slide-item{
+    background-color: transparent;
+    &:after{
+      background: transparent;
+    }
+    .background{
+      height: 600px;
+      &:before{
+        background: transparent;
+      }
+    }
+    .image-demo-left{
+      height: 500px;
+    }
+    .content-slide{
+      padding-top: 11rem;
+    }
+  }
+  .main-paragraph{
+    max-width: 450px;
+    color: #50526B;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+}

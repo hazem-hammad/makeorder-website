@@ -67,7 +67,7 @@ export default class Layout extends Component {
                             <Nav className="mr-auto">
                                 <Link to="/" className="nav-link">الرئيسية</Link>
                                 <Link to="/" className="nav-link">المميزات</Link>
-                                <Link to="/" className="nav-link">الأسعار</Link>
+                                <Link to="/pricing" className="nav-link">الأسعار</Link>
                                 <Link to="/contact-us" className="nav-link">اتصل بنا</Link>
                             </Nav>
                             <div>

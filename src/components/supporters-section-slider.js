@@ -54,7 +54,7 @@ export default class SupportersSectionSlider extends Component {
         ]
 
         return (
-            <div className="supporters-slider horizontal">
+            <div className={`supporters-slider horizontal ${ this.props.className }`}>
                 <p className="text-center supporters-slider-title"> موثوقين من قبل اكثر من ١٠ الاف مطعما في الشرق الاوسط </p>
                 <div>
                     <Slider

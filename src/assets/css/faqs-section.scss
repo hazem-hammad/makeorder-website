@@ -1,0 +1,14 @@
+.faqs-section{
+  padding:6rem 0 2.4rem 0;
+  &.custom-width{
+    max-width: 800px;
+  }
+  .main-title{
+    margin-bottom:3rem;
+  }
+  .main-paragraph{
+    font-family: $font-semi-bold;
+    margin-bottom: 4px;
+    font-size: rem(20);
+  }
+}

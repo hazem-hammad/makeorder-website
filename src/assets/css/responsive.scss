@@ -42,6 +42,12 @@
     //padding-right: 7rem;
     max-width: 500px;
   }
+  .packages-section .package-table {
+    margin-bottom: 10px;
+    .body{
+      min-height: 100px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -140,6 +146,12 @@
   }
   .contact-us-form .box{
     padding: 1.3rem;
+  }
+  .packages-section .package-table {
+    margin-bottom: 10px;
+    .body{
+      min-height: 100px;
+    }
   }
 
 }

@@ -6,6 +6,16 @@
     border-color: #262847;
     background-color: #262847;
   }
+  &.btn-outline-warning{
+    color: #F15C41;
+    border-color: #F15C41;
+    &:hover , &:focus , &:active{
+      color: #fff !important;
+      border-color: #F15C41 !important;
+      background-color: #F15C41 !important;
+      box-shadow: none !important;
+    }
+  }
   &.btn-warning{
     color: #fff;
     border-color: #F15C41;
@@ -21,33 +31,33 @@
     transition-duration: 0.5s;
     overflow: hidden;
     border: none;
-    &:before{
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #d34e37;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 100% 50%;
-      transform-origin: 100% 50%;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    &:hover{
-      &:before{
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-      }
-    }
+    //&:before{
+    //  content: "";
+    //  position: absolute;
+    //  z-index: -1;
+    //  top: 0;
+    //  left: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  background: #d34e37;
+    //  -webkit-transform: scaleX(0);
+    //  transform: scaleX(0);
+    //  -webkit-transform-origin: 100% 50%;
+    //  transform-origin: 100% 50%;
+    //  -webkit-transition-property: transform;
+    //  transition-property: transform;
+    //  -webkit-transition-duration: 0.5s;
+    //  transition-duration: 0.5s;
+    //  -webkit-transition-timing-function: ease-out;
+    //  transition-timing-function: ease-out;
+    //}
+    //&:hover{
+    //  &:before{
+    //      -webkit-transform: scaleX(1);
+    //      transform: scaleX(1);
+    //      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    //      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    //  }
+    //}
   }
 }

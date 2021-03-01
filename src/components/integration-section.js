@@ -64,8 +64,8 @@ export default class IntegrationSection extends Component {
         ]
 
         return (
-            <div className="integration-section">
-                <div className="center-mode mb-3">
+            <div className={`integration-section ${ this.props.className }`}>
+                <div className="center-mode mb-3 custom-width">
                     <h2 className="main-title">  التكامل خلال جميع الباقات </h2>
                     <p className="main-paragraph mb-5">
                         التوافق مع عدد كبير من تطبيقات التوصيل وخيارات الدفع والمزيد ...

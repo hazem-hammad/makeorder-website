@@ -1,0 +1,48 @@
+.offers-section{
+  font-size: rem(19);
+  .content-slide{
+    margin-top: 5rem;
+  }
+  .title{
+    margin-bottom: 1rem;
+  }
+  .main-paragraph{
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  .main-paragraph-title{
+    font-size: rem(25);
+    font-family: $font-semi-bold;
+  }
+  .image-demo-box{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-top: -1rem;
+  }
+  .image-demo{
+    width: 475px;
+    height: 401px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    //margin: 0 auto;
+    object-position: left;
+    margin-right: auto;
+    margin-left: 0;
+
+  }
+  .image-demo-circle{
+    position: absolute;
+    right: 0;
+    /* top: 50%; */
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    /* transform: translateY(-50%); */
+    bottom: 0;
+    margin-bottom: -6rem;
+  }
+}
+
