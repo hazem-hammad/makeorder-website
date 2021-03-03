@@ -245,16 +245,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4rem 0;
   > .buttons{
     position: relative;
     margin: 0.2rem;
     font-weight: 600;
     font-size: 1.1875rem;
     min-width: 120px;
-    background-color: #f44336;
+    //background-color: #f44336;
     padding: 0.5rem 1rem;
     text-align: center;
     border-radius: 14px;
+    &.active{
+      color: #f44336;
+      background: rgba(241, 92, 65, 0.1);
+    }
     &:hover{
       cursor: pointer;
     }
@@ -265,6 +270,13 @@
       top: 0;
       height: 100%;
       opacity: 0;
+      .form-check-input{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
     }
   }
 }

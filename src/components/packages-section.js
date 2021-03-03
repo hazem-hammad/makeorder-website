@@ -1,63 +1,105 @@
-import React from "react";
-import {Container,Tabs,Tab , Image , Form} from "react-bootstrap";
+import React, {Component} from "react";
+import {Container,Tabs,Tab , Image , Form,Button} from "react-bootstrap";
 import PackageTable from './package-table'
 import wafarIcon from "../assets/images/wafar.png";
 
-const PackagesSection = () => {
-  return (
-      <div className="packages-section">
-        <div className="center-mode">
-          <h2 className="main-title"> باقات مرنة تناسب حجم مطعمك</h2>
-          <p className="main-paragraph">
-            اختار الباقه المناسبه , سجل قى 10 ثوان , قم بالترقيه او الالغاء فى اى وقت
-             </p>
-        </div>
-          {/*<div>*/}
-          {/*    <div key={`default-radio`} className="mb-3 pricing-tabs">*/}
-          {/*        <div className='buttons'>*/}
-          {/*            <Form.Check*/}
-          {/*                className={'radio-button'}*/}
-          {/*                type='radio'*/}
-          {/*                id={`yearly`}*/}
-          {/*                label={`سنوى`}*/}
-          {/*                name={'ss'}*/}
-          {/*            />*/}
-          {/*            <span>سنوى</span>*/}
-          {/*        </div>*/}
-          {/*        <div className='buttons'>*/}
-          {/*            <Form.Check*/}
-          {/*                className={'radio-button'}*/}
-          {/*                type='radio'*/}
-          {/*                label={`شهرى`}*/}
-          {/*                id={`monthly`}*/}
-          {/*                name={'ss'}*/}
-          {/*            />*/}
-          {/*            <span>شهرى</span>*/}
+export default class PackagesSection extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 'yearly',
+            prices: {value1: null , value2:null, value3:null},
 
-          {/*        </div>*/}
+        }
+    }
+    handleChange= (event) => {
+        this.setState({value: event.target.value});
+        setTimeout(()=>{
+            this.setPrices();
+        },300)
+    }
+    setPrices= () => {
+        this.setState(prevState => {
+            let prices = Object.assign({}, prevState.prices);
+            if(this.state.value === 'yearly'){
+                prices.value1 = 'مجانا';
+                prices.value2 = '049 ج';
+                prices.value3 = '333 ج';
+            }else {
+                prices.value1 = '770 ج';
+                prices.value2 = '555 ج';
+                prices.value3 = '77 ج';
+            }
 
+            return { prices };
+        })
 
+       setTimeout(()=>{ this.props.onSelectLanguage(this.state.prices);},300)
 
-          {/*    </div>*/}
+    }
 
-          {/*</div>*/}
+        componentDidMount() {
+        this.setPrices();
+    }
 
-          <Container className="relative">
-              <div className="tabs-width">
-                  <Image src={wafarIcon} className='wafarIcon'/>
-              </div>
-              <Tabs defaultActiveKey="year" id="uncontrolled-tab-example">
-                  <Tab eventKey="year" title="سنوى">
-                      <PackageTable>
-                      </PackageTable>
-                  </Tab>
-                  <Tab eventKey="month" title="شهرى">
-                      <div>dd</div>
-                  </Tab>
-              </Tabs>
-          </Container>
-      </div>
-  );
-};
+    render() {
+        const { prices, value } = this.state;
 
-export default PackagesSection;
+        return(
+            <div className="packages-section">
+                <div className="center-mode">
+                    <h2 className="main-title"> باقات مرنة تناسب حجم مطعمك </h2>
+                    <p className="main-paragraph">
+                        اختار الباقه المناسبه , سجل قى 10 ثوان , قم بالترقيه او الالغاء فى اى وقت
+                    </p>
+                </div>
+                <div>
+
+                </div>
+                <Container className="relative">
+                    <div className="tabs-width">
+                        <Image src={wafarIcon} className='wafarIcon'/>
+                    </div>
+                    <div key={`default-radio`} className="pricing-tabs">
+                        <div className={`buttons ${value === 'yearly'? 'active':''}`}>
+                            <Form.Check
+                                className={'radio-button'}
+                                type='radio'
+                                id={`yearly`}
+                                label={`سنوى`}
+                                name={'radioButton'}
+                                value='yearly'
+                                onClick={this.handleChange}
+                            />
+                            <span>سنوى</span>
+                        </div>
+                        <div className={`buttons ${value === 'monthly'? 'active':''}`}>
+                            <Form.Check
+                                className={'radio-button'}
+                                type='radio'
+                                label={`شهرى`}
+                                id={`monthly`}
+                                name={'radioButton'}
+                                value='monthly'
+                                onClick={this.handleChange}
+                            />
+                            <span>شهرى</span>
+
+                        </div>
+                        <Form.Group className={"buttons"} controlId="exampleForm.ControlSelect1">
+                            <Form.Control as="select" onChange={this.handleChange}>
+                                <option>مصر</option>
+                                <option>السعوديه</option>
+                            </Form.Control>
+                        </Form.Group>
+
+                    </div>
+
+                    <PackageTable prices={prices}>
+                    </PackageTable>
+                </Container>
+            </div>
+
+        )
+    }
+}

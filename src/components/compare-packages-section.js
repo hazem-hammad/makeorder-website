@@ -18,6 +18,7 @@ export default class ComparePackagesSection extends Component {
         this.setState({ isActive: !this.state.isActive });
     };
     render (){
+        let {prices} = this.props;
         const isActive = this.state.isActive;
         let buttonText;
         if(this.state.isActive){
@@ -44,7 +45,7 @@ export default class ComparePackagesSection extends Component {
                                     <div className="header" style={{backgroundImage: `url(${circleBg03})`}}>
                                         <Image src={lightsIcon} className='icon'/>
                                         <p className="title">البدايه</p>
-                                        <h3 className="price">مجانا</h3>
+                                        <h3 className="price">{prices['value1']}</h3>
                                         <Button variant={"warning"} block>ابدأ الان مجانا</Button>
                                     </div>
                                 </div>
@@ -54,7 +55,7 @@ export default class ComparePackagesSection extends Component {
                                     <div className="header" style={{backgroundImage: `url(${circleBg04})`}}>
                                         <Image src={planIcon} className='icon'/>
                                         <p className="title">الانطلاق</p>
-                                        <h3 className="price">  350 ج <small className="sub-title">/ شهر</small>  </h3>
+                                        <h3 className="price">  {prices['value2']}  <small className="sub-title">/ شهر</small>  </h3>
                                         <Button variant={"warning"} block>ابدأ الان مجانا</Button>
                                     </div>
                                 </div>
@@ -64,7 +65,7 @@ export default class ComparePackagesSection extends Component {
                                     <div className="header" style={{backgroundImage: `url(${circleBg05})`}}>
                                         <Image src={flowerIcon} className='icon'/>
                                         <p className="title">النمو</p>
-                                        <h3 className="price">  670 ج <small className="sub-title">/ شهر</small>  </h3>
+                                        <h3 className="price">  {prices['value3']} <small className="sub-title">/ شهر</small>  </h3>
                                         <Button variant={"warning"} block>ابدأ الان مجانا</Button>
                                     </div>
                                 </div>
