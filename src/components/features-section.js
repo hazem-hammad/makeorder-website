@@ -7,9 +7,9 @@ const FeaturesSection = () => {
         <div className="features-section customer-section bg-white">
             <Container>
                 <div className="content-header">
-                    <h2 className="main-title">  العديد من المميزات في انتظارك</h2>
+                    <h2 className="main-title">  تجربة مميزة بانتظارك أنت وعملائك </h2>
                     <p className="main-paragraph">
-                         يوفر ميك اوردر العديد من المميزات، التي تسهل عليك ادارة مطعمك وزيادة اوردراتك والحفاظ علي سعادة زبائنك الحاليين والجدد
+                        يوفر ميك اوردر العديد من المميزات التي تسهل عليك ادارة مطعمك وزيادة مبيعاتك والحفاظ على سعادة عملائك الحاليين واستقطاب عملاء جدد
                     </p>
                 </div>
             </Container>

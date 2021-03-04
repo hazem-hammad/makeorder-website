@@ -105,20 +105,20 @@ export default class NextStepSectionSlider extends Component {
                             <div className='main-slide-item warning-color' onClick={(e) => {this.slider2.slickGoTo('2')}}>
                                 <h3 className="title">
                                     <Image src={iPhoneIcon} className='icon'/>
-                                    <span>نوافذ بيع عديدة</span>
+                                    <span>  قنوات متعددة </span>
                                 </h3>
                             </div>
                             <div className='main-slide-item success-color' onClick={(e) => {this.slider2.slickGoTo('1')}}>
                                 <h3 className="title">
                                     <Image src={userIcon} className='icon'/>
-                                    <span>عميلك اولا</span>
+                                    <span> قوة وسهولة </span>
                                 </h3>
                             </div>
 
                             <div className='main-slide-item primary-color' onClick={(e) => {this.slider2.slickGoTo('0')}}>
                                 <h3 className="title">
                                     <Image src={usersIcon} className='icon'/>
-                                    <span>الادارة اسهل</span>
+                                    <span> تكامل </span>
                                 </h3>
                             </div>
                         </Slider>
@@ -141,11 +141,11 @@ export default class NextStepSectionSlider extends Component {
                                 <Row>
                                     <Col lg="5">
                                         <div>
-                                            <h2 className="title">ابدأ في استقبال طلبات مطعمك اونلاين </h2>
+                                            <h2 className="title">خيارات دفع وتوصيل ومميزات لانهائية  </h2>
                                             <p className="paragraph">
-                                                 موقعك وتطبيق بأسم مطعمك، ليقوم زبائنك بعرض قوائم الطعام والطلب بسهولة ثم الدفع بوسائل متعددة ومتابعة الطلب لحظة بلحظ
+                                                لن تحتاج شئ إلا الإبداع فى تقديم الأطباق الشهية فنحن نوفر مجموعة كبيرة من الترابط مع مختلف مقدمي الخدمات, مثل خدمات التوصيل , الدفع, التسويق, الاحصائيات, الولاء
                                             </p>
-                                            <Button variant="warning" size="lg">  ابدأ دلوقتي </Button>
+                                            <Button variant="warning" size="lg">   ابدأ الآن مجانا  </Button>
                                         </div>
                                     </Col>
                                     <Col lg="7">
@@ -160,11 +160,11 @@ export default class NextStepSectionSlider extends Component {
                                 <Row>
                                     <Col lg="5">
                                         <div>
-                                            <h2 className="title">ابدأ في استقبال طلبات مطعمك اونلاين </h2>
+                                            <h2 className="title">إدارة سهلة و خصائص قياسية مع احصائيات احترافيه</h2>
                                             <p className="paragraph">
-                                                موقعك وتطبيق بأسم مطعمك، ليقوم زبائنك بعرض قوائم الطعام والطلب بسهولة ثم الدفع بوسائل متعددة ومتابعة الطلب لحظة بلحظ
+                                                مع لوحة تحكم تمنحك السيطرة الكاملة والمتابعة الفورية لمبيعاتك, بسهولة ستتمكن من ضبط الاعدادت الخاصة بفروع مطعمك والمناطق التي تغطيها ومواعيد العمل وخيارات الدفع  والتوصيل وقوائم الطعام المختلفة بما في ذلك الصور والسعرات الحرارية  وبالتأكيد السعر بكل مرونة, واضافة الموظفين بصلاحيات مختلفة, كما ستمكنك من فهم أكثر ودقيق لزبائنك
                                             </p>
-                                            <Button variant="warning" size="lg">  ابدأ دلوقتي </Button>
+                                            <Button variant="warning" size="lg">   ابدأ الآن مجانا </Button>
                                         </div>
                                     </Col>
                                     <Col lg="7">
@@ -179,11 +179,11 @@ export default class NextStepSectionSlider extends Component {
                                 <Row>
                                     <Col lg="5">
                                         <div>
-                                            <h2 className="title">ابدأ في استقبال طلبات مطعمك اونلاين </h2>
+                                            <h2 className="title">قنوات بيع وتواصل متعددة  </h2>
                                             <p className="paragraph">
-                                                موقعك وتطبيق بأسم مطعمك، ليقوم زبائنك بعرض قوائم الطعام والطلب بسهولة ثم الدفع بوسائل متعددة ومتابعة الطلب لحظة بلحظ
+                                                سيتمكن زبائنك من مشاهدة قائمة الطعام والطلب عبر الفيسبوك, الانستقرام وجوجل للأعمال! وواتساب
                                             </p>
-                                            <Button variant="warning" size="lg">  ابدأ دلوقتي </Button>
+                                            <Button variant="warning" size="lg">    ابدأ الآن مجانا </Button>
                                         </div>
                                     </Col>
                                     <Col lg="7">
@@ -198,11 +198,11 @@ export default class NextStepSectionSlider extends Component {
                                 <Row>
                                     <Col lg="5">
                                         <div>
-                                            <h2 className="title">ابدأ في استقبال طلبات مطعمك اونلاين </h2>
+                                            <h2 className="title">موقعك و تطبيقك الخاص بعلامتك التجارية </h2>
                                             <p className="paragraph">
-                                                موقعك وتطبيق بأسم مطعمك، ليقوم زبائنك بعرض قوائم الطعام والطلب بسهولة ثم الدفع بوسائل متعددة ومتابعة الطلب لحظة بلحظ
+                                                حان الوقت لامتلاكك لموقعك الخاص وكذلك تطبيقك بأسم مطعمك ليقوم زبائنك بمشاهدة قوائم الطعام والطلب بكل سهولة مع خاصية التسجيل السريع و الطلب  ثم الدفع عبر الوسائل الدفع المتعددة ومتابعة حالة الطلب لحظة بلحظة
                                             </p>
-                                            <Button variant="warning" size="lg">  ابدأ دلوقتي </Button>
+                                            <Button variant="warning" size="lg">   ابدأ الآن مجانا </Button>
                                         </div>
                                     </Col>
                                     <Col lg="7">

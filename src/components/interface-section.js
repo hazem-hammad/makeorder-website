@@ -8,9 +8,10 @@ export default class InterfaceSection extends Component {
             <div className={`customers-section interface-section bg-white  ${ this.props.className }`}>
                 <Container>
                     <div className="center-mode">
-                        <h2 className="main-title"> واجهة تحكم لإدارة مطعمك</h2>
+                        <h2 className="main-title"> تحكم كامل وبكل سهولة </h2>
                         <p className="main-paragraph">
-                            قم بالتركيز فيما تبدع فيه من اعداد اشهى الوجبات لعملائك واترك لنا الباقي                     </p>
+                            قم بالتركيز فيما تبدع فيه من اعداد اشهى الوجبات لعملائك واترك لنا الباقي.
+                        </p>
                     </div>
                     <InterfaceSectionSlider>
                     </InterfaceSectionSlider>

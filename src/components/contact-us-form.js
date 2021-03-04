@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Container, Row, Form, Button} from "react-bootstrap";
 import Icon from "@mdi/react";
-import {mdiFacebook, mdiLinkedin, mdiTwitter, mdiYoutube} from "@mdi/js";
+import {mdiFacebook, mdiInstagram, mdiLinkedin, mdiTwitter, mdiYoutube} from "@mdi/js";
 
 
 
@@ -64,17 +64,17 @@ const ContactUsForm = () => {
                            <div>
                                <p className="title">  أو حسابات التواصل الاجتماعي</p>
                                <ul className="list-unstyled list-inline list-social">
-                                   <li><a href="/">
+                                   <li><a href="https://www.facebook.com/GetMakeOrder/" target="_blank">
                                        <Icon path={mdiFacebook} size={1} className="mdi-icon"/>
                                    </a></li>
-                                   <li><a href="/">
-                                       <Icon path={mdiLinkedin} size={1} className="mdi-icon"/>
-                                   </a></li>
-                                   <li><a href="/">
+                                   <li><a href="https://twitter.com/getmakeorder" target="_blank">
                                        <Icon path={mdiTwitter} size={1} className="mdi-icon"/>
                                    </a></li>
-                                   <li><a href="/">
+                                   <li><a href="https://www.youtube.com/channel/UCiIhexgFAhHYjMK_hoBM44A" target="_blank">
                                        <Icon path={mdiYoutube} size={1} className="mdi-icon"/>
+                                   </a></li>
+                                   <li><a href="https://www.instagram.com/getmakeorder/" target="_blank">
+                                       <Icon path={mdiInstagram} size={1} className="mdi-icon"/>
                                    </a></li>
                                </ul>
                            </div>

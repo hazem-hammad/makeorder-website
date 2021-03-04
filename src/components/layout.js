@@ -45,7 +45,7 @@ export default class Layout extends Component {
                                 <Link to="/contact-us" className="nav-link">اتصل بنا</Link>
                             </Nav>
                             <div>
-                                <Link to="/about" className="navbar-actions">الدخول</Link>
+                                {/*<Link to="/about" className="navbar-actions">الدخول</Link>*/}
                                 <Button variant="dark" className="mr-3 navbar-actions">نسخة تجريبية</Button>
                             </div>
                         </Navbar.Collapse>

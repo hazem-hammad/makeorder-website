@@ -57,7 +57,9 @@
       }
     }
     .action {
-      margin-top: 15px;
+      margin-top: 15px !important;
+      font-size: rem(21);
+      display: block;
       .mdi-icon{
         margin-right: 6px;
       }
