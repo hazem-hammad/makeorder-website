@@ -52,8 +52,8 @@ export default class FeatureAppsPaymentSection extends Component {
                 <Row>
                     <Col md='12' lg="6">
                         <div className="integration-slider">
-                            <p className="title"> قوه التكامل</p>
-                            <p className="subtitle">ستتمكن من اضافه قوائم الطعام والأصناف الخاصه بك بكل سهوله وعدد لا نهائى من الاضافات</p>
+                            <p className="title">  التوافق مع مقدمي الخدمات المختلفة </p>
+                            <p className="subtitle">لقوة أكبر لا محدودة, ستتمكن من الترابط مع العشرات من مقدمي الخدمات لإثراء تجربتك معنا وتجربة عملائك معك. </p>
                             <div className='logo-box'>
                                 <div>
                                     <span><Image src={logo01} className="image-preview"/></span>

@@ -4,7 +4,9 @@ import CustomersSectionSlider from "./customers-section-slider";
 
 export default class CustomersSection extends Component {
 
+
     render() {
+        const {list} = this.props
         return (
             <div className={`customers-section ${this.props.bg}`}>
                 <Container>
@@ -14,7 +16,7 @@ export default class CustomersSection extends Component {
                             {this.props.subtitle}
                         </p>
                     </div>
-                    <CustomersSectionSlider>
+                    <CustomersSectionSlider list={list}>
                     </CustomersSectionSlider>
                 </Container>
             </div>

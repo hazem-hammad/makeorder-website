@@ -124,6 +124,7 @@
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
     li{
       font-size: rem(21);
       display: flex;
@@ -138,6 +139,8 @@
         font-size: rem(22);
         strong{
           color: #262847;
+          margin-left: 4px;
+          display: inline-block;
         }
       }
     }

@@ -24,6 +24,10 @@ export default class CustomersSectionSlider extends Component {
     }
 
     render() {
+        const {list} = this.props;
+        const listLength = (this.props && this.props.list && this.props.list.length > 0)? this.props.list.length : 4;
+
+
         return (
             <div className="customer-slider vertical">
                 <Row>
@@ -31,7 +35,7 @@ export default class CustomersSectionSlider extends Component {
                         <Slider
                             asNavFor={this.state.nav1}
                             ref={slider => (this.slider2 = slider)}
-                            slidesToShow={4}
+                            slidesToShow={listLength}
                             draggable={false}
                             swipeToSlide={true}
                             focusOnSelect={true}
@@ -42,30 +46,45 @@ export default class CustomersSectionSlider extends Component {
                             autoplaySpeed= {3000}
                             pauseOnHover={false}
                         >
-                            <div className='main-slide-item'>
-                                <h3 className="title">الإستلام من الفرع</h3>
-                                <p className="paragraph">
-                                    سيتمكن زبائنك من الطلب أونلاين واختيار الإستلام من الفرع, ويمكنهم اختيار وقت الإستلام ايضا
-                                </p>
-                            </div>
-                            <div className='main-slide-item'>
-                                <h3 className="title">حجز طاولة طعام</h3>
-                                <p className="paragraph">
-                                     سيتمكن زبائنك من حجز طاولة وتحديد عدد الاشخاص بكل سهولة دون مزيد من الإتصالا
-                                </p>
-                            </div>
-                            <div className='main-slide-item'>
-                                <h3 className="title"> قوائم الانتظار</h3>
-                                <p className="paragraph">
-                                     بكل سهولة قم بتسجيل عملائك ليصلهم رسالة قصيرة أو عبر الواتساب فور جاهزيتك لخدمتهم
-                                </p>
-                            </div>
-                            <div className='main-slide-item'>
-                                <h3 className="title"> التوصيل السريع </h3>
-                                <p className="paragraph">
-                                    ستتمكن من توصيل الطلبات الى عملائك بالمناطق التي تغطيها سواء من خلالك أو عبر شركات التوصيل
-                                </p>
-                            </div>
+
+                            {
+                                list && list.map(function(el,index) {
+                                    return (
+                                            <div className='main-slide-item'>
+                                                <h3 className="title"> {el.title} </h3>
+                                                <p className="paragraph">
+                                                    {el.paragraph}
+                                                </p>
+                                            </div>
+                                        )
+                                })
+                            }
+
+
+                            {/*<div className='main-slide-item'>*/}
+                            {/*    <h3 className="title">الإستلام من الفرع</h3>*/}
+                            {/*    <p className="paragraph">*/}
+                            {/*        سيتمكن زبائنك من الطلب أونلاين واختيار الإستلام من الفرع, ويمكنهم اختيار وقت الإستلام ايضا*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
+                            {/*<div className='main-slide-item'>*/}
+                            {/*    <h3 className="title">حجز طاولة طعام</h3>*/}
+                            {/*    <p className="paragraph">*/}
+                            {/*         سيتمكن زبائنك من حجز طاولة وتحديد عدد الاشخاص بكل سهولة دون مزيد من الإتصالا*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
+                            {/*<div className='main-slide-item'>*/}
+                            {/*    <h3 className="title"> قوائم الانتظار</h3>*/}
+                            {/*    <p className="paragraph">*/}
+                            {/*         بكل سهولة قم بتسجيل عملائك ليصلهم رسالة قصيرة أو عبر الواتساب فور جاهزيتك لخدمتهم*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
+                            {/*<div className='main-slide-item'>*/}
+                            {/*    <h3 className="title"> التوصيل السريع </h3>*/}
+                            {/*    <p className="paragraph">*/}
+                            {/*        ستتمكن من توصيل الطلبات الى عملائك بالمناطق التي تغطيها سواء من خلالك أو عبر شركات التوصيل*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
                         </Slider>
                     </Col>
                     <Col lg="7">
@@ -81,22 +100,33 @@ export default class CustomersSectionSlider extends Component {
                             // rtl={true}
                             draggable={false}
                         >
-                            <div className="customer-preview-box">
-                                <Image src={circleBg} className='bg'/>
-                                <Image src={customerImageSlide01} className='image'/>
-                            </div>
-                            <div className="customer-preview-box">
-                                <Image src={circleBg} className='bg'/>
-                                <Image src={customerImageSlide01} className='image'/>
-                            </div>
-                            <div className="customer-preview-box">
-                                <Image src={circleBg} className='bg'/>
-                                <Image src={customerImageSlide01} className='image'/>
-                            </div>
-                            <div className="customer-preview-box">
-                                <Image src={circleBg} className='bg'/>
-                                <Image src={customerImageSlide01} className='image'/>
-                            </div>
+                            {
+                                list && list.map(function(el,index) {
+                                    return (
+                                        <div className="customer-preview-box">
+                                            <Image src={circleBg} className='bg'/>
+                                            <Image src={customerImageSlide01} className='image'/>
+                                        </div>
+                                    )
+                                })
+                            }
+
+                            {/*<div className="customer-preview-box">*/}
+                            {/*    <Image src={circleBg} className='bg'/>*/}
+                            {/*    <Image src={customerImageSlide01} className='image'/>*/}
+                            {/*</div>*/}
+                            {/*<div className="customer-preview-box">*/}
+                            {/*    <Image src={circleBg} className='bg'/>*/}
+                            {/*    <Image src={customerImageSlide01} className='image'/>*/}
+                            {/*</div>*/}
+                            {/*<div className="customer-preview-box">*/}
+                            {/*    <Image src={circleBg} className='bg'/>*/}
+                            {/*    <Image src={customerImageSlide01} className='image'/>*/}
+                            {/*</div>*/}
+                            {/*<div className="customer-preview-box">*/}
+                            {/*    <Image src={circleBg} className='bg'/>*/}
+                            {/*    <Image src={customerImageSlide01} className='image'/>*/}
+                            {/*</div>*/}
                         </Slider>
                     </Col>
                 </Row>

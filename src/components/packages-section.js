@@ -48,9 +48,11 @@ export default class PackagesSection extends Component {
         return(
             <div className="packages-section">
                 <div className="center-mode">
-                    <h2 className="main-title"> باقات مرنة تناسب حجم مطعمك </h2>
+                    <h2 className="main-title"> باقات مرنة تناسب حجم مطعمك  وتطلعاتك </h2>
                     <p className="main-paragraph">
-                        اختار الباقه المناسبه , سجل قى 10 ثوان , قم بالترقيه او الالغاء فى اى وقت
+                        أفضل قيمة وبدون أية عمولات .
+                        <br/>
+                        أختر الباقة , سجل مجاناً  فى 10 ثوان, قم بالترقية أو الإلغاء فى أي وقت
                     </p>
                 </div>
                 <div>
@@ -66,7 +68,7 @@ export default class PackagesSection extends Component {
                                 className={'radio-button'}
                                 type='radio'
                                 id={`yearly`}
-                                label={`سنوى`}
+                                label={`سنويا`}
                                 name={'radioButton'}
                                 value='yearly'
                                 onClick={this.handleChange}
@@ -77,7 +79,7 @@ export default class PackagesSection extends Component {
                             <Form.Check
                                 className={'radio-button'}
                                 type='radio'
-                                label={`شهرى`}
+                                label={`شهريا `}
                                 id={`monthly`}
                                 name={'radioButton'}
                                 value='monthly'

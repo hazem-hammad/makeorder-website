@@ -23,9 +23,11 @@ const FeatureMainSection = () => {
                                     <Col lg="6">
                                         <div className="content-slide">
                                             <h1 className="title">
-                                                جميع ما تحتاجه لانطلاق مطعمك فى مكان واحد
+                                                جميع ما تحتاجه لإطلاق مطعم والبيع أونلاين فى مكان واحد
                                             </h1>
-                                            <p className='main-paragraph'>نؤمن بأن المطاعم يجب أن تتواصل مباشرا مع عملائها وأن لا يقتطع جزء كبير من مبيعاتها مقابل عموله!</p>
+                                            <p className='main-paragraph'>
+                                                نؤمن بأن المطاعم يجب ان تتواصل مباشرتاً مع عملائها وأن لا يقتطع جزء كبير من مبيعاتك مقابل عمولة!
+                                            </p>
                                             <Button variant="warning" size="lg"> احصل علي ٣٠ يوم مجانا!</Button>
 
                                         </div>

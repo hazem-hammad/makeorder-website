@@ -19,26 +19,20 @@ const ContactUsForm = () => {
                                </Form.Group>
                                <Form.Group controlId="formBasicPhone">
                                    <Form.Label>رقم الموبايل</Form.Label>
-                                   <Form.Control type="number" placeholder="رقم الموبايل" />
+                                   <Form.Control type="number" placeholder="رقم الجوال " />
                                </Form.Group>
                                <Form.Group controlId="formBasicName">
                                    <Form.Label> الدوله</Form.Label>
                                    <Form.Control as="select">
-                                       <option>1</option>
-                                       <option>2</option>
-                                       <option>3</option>
-                                       <option>4</option>
-                                       <option>5</option>
+                                       <option>مصر</option>
+                                       <option>السعوديه</option>
                                    </Form.Control>
                                </Form.Group>
                                <Form.Group controlId="formBasicName">
-                                   <Form.Label> سبب التواصل</Form.Label>
+                                   <Form.Label>  سبب التواصل</Form.Label>
                                    <Form.Control as="select">
-                                       <option>1</option>
-                                       <option>2</option>
-                                       <option>3</option>
-                                       <option>4</option>
-                                       <option>5</option>
+                                       <option>استفسار عام</option>
+                                       <option>دعم فني</option>
                                    </Form.Control>
                                </Form.Group>
                                <Form.Group controlId="formBasicPhone">
@@ -50,14 +44,14 @@ const ContactUsForm = () => {
                        </Col>
                        <Col lg="5">
                            <div className="mb-5 mt-4">
-                               <p className="title">كما يمكنك التواصل عبر </p>
-                               <p className="subtitle">مكتبنا الرئيسى</p>
+                               <p className="title">كما يمكنك التواصل معنا عبر   </p>
+                               <p className="subtitle">   مكاتبنا </p>
                                <p className="mb-0">
-                                   <strong>السعوديه : </strong>
+                                   <strong>المملكة العربية السعودية : </strong>
                                    حى الحمرا شارع انس بن مالك الرياض
                                </p>
                                <p>
-                                   <strong>مصر : </strong>
+                                   <strong>جمهورية مصر العربية : </strong>
                                    القاهره , المهندسين
                                </p>
                                <p className="subtitle"> رقم الهاتف</p>
@@ -68,7 +62,7 @@ const ContactUsForm = () => {
                                <p>(من 9ص حتى 5 مساءا)</p>
                            </div>
                            <div>
-                               <p className="title">وسائل التواصل الاجتماعى</p>
+                               <p className="title">  أو حسابات التواصل الاجتماعي</p>
                                <ul className="list-unstyled list-inline list-social">
                                    <li><a href="/">
                                        <Icon path={mdiFacebook} size={1} className="mdi-icon"/>

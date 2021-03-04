@@ -10,16 +10,20 @@ import mainSectionPic from '../assets/images/slide-image-customer.png'
 import circleBg from '../assets/images/circle-yellow.png'
 import {mdiAndroid , mdiApple} from "@mdi/js";
 import Icon from "@mdi/react";
+import Slider from "react-slick";
 
 
 
 
 export default class OffersSection extends Component {
+
     render() {
+        const {list} = this.props
+
         return(
             <div className={`offers-section main-section ${this.props.bg}`}>
                 <Container>
-                    <Row className="justify-content-md-between align-items-center " >
+                    <Row className="justify-content-md-between  " >
                         <Col lg="6" >
                             <div className="image-demo-box">
                                 <Image src={circleBg} className='image-demo-circle'/>
@@ -38,26 +42,44 @@ export default class OffersSection extends Component {
                                 {this.props.showTwoCol?
 
                                     <Row>
-                                        <Col lg="6" >
-                                            <div>
-                                                <p className='main-paragraph-title'>
-                                                    تفعيل الخصومات تلقائيا
-                                                </p>
-                                                <p className="subtitle">
-                                                    تفعيل الخصومات تلقائيا على عربه تسوق العميل اذا كانت تفى بالمتطلبات المحدده فى العرض الترويجى
-                                                </p>
-                                            </div>
-                                        </Col>
-                                        <Col lg="6" >
-                                            <div>
-                                                <p className='main-paragraph-title'>
-                                                    شروط الخصم
-                                                </p>
-                                                <p className="subtitle">
-                                                    تفعيل الخصومات تلقائيا على عربه تسوق العميل اذا كانت تفى بالمتطلبات المحدده فى العرض الترويجى
-                                                </p>
-                                            </div>
-                                        </Col>
+                                        {
+                                            list && list.map(function(el,index) {
+                                                return (
+                                                    <Col lg="6" >
+                                                        <div>
+                                                            <p className='main-paragraph-title'>
+                                                                {el.title}
+                                                            </p>
+                                                            <p className="subtitle">
+                                                                {el.paragraph}
+                                                            </p>
+                                                        </div>
+                                                    </Col>
+
+                                                )
+                                            })
+                                        }
+
+                                        {/*<Col lg="6" >*/}
+                                        {/*    <div>*/}
+                                        {/*        <p className='main-paragraph-title'>*/}
+                                        {/*            تفعيل الخصومات تلقائيا*/}
+                                        {/*        </p>*/}
+                                        {/*        <p className="subtitle">*/}
+                                        {/*            تفعيل الخصومات تلقائيا على عربه تسوق العميل اذا كانت تفى بالمتطلبات المحدده فى العرض الترويجى*/}
+                                        {/*        </p>*/}
+                                        {/*    </div>*/}
+                                        {/*</Col>*/}
+                                        {/*<Col lg="6" >*/}
+                                        {/*    <div>*/}
+                                        {/*        <p className='main-paragraph-title'>*/}
+                                        {/*            شروط الخصم*/}
+                                        {/*        </p>*/}
+                                        {/*        <p className="subtitle">*/}
+                                        {/*            تفعيل الخصومات تلقائيا على عربه تسوق العميل اذا كانت تفى بالمتطلبات المحدده فى العرض الترويجى*/}
+                                        {/*        </p>*/}
+                                        {/*    </div>*/}
+                                        {/*</Col>*/}
                                     </Row>
                                     :
                                     <ul className='list-unstyled list-inline list-social'>

@@ -11,7 +11,8 @@ const ContactUsHeader = () => {
                 <div className="center-mode">
                     <h2 className="main-title"> تواصل مع ميك اوردر </h2>
                     <p className="main-paragraph">
-                         شكراً لاهتمامك بالتواصل معنا, ويسعدنا دائما ان نكون على تواصل وخدمتك بأفضل صورة ممكنة </p>
+                        شكراً لاهتمامك بالتواصل معنا, ويسعدنا دائماً ان نجيب على استفساراتك بأسرع وقت ممكن.
+                    </p>
                 </div>
             </Container>
         </div>

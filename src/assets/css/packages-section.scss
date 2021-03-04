@@ -199,7 +199,7 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 67.8%, #FFFFFF 86.18%);
     }
     &.heightActive{
-      height: 1700px;
+      height: auto;
       &:before{
         display: none;
       }
@@ -232,6 +232,20 @@
         font-family: $font-semi-bold;
       }
     }
+  }
+  .app-logos div{
+    width: 20%;
+    .image-preview {
+      width: 78px;
+      height: 58px;
+    }
+  }
+  .social div{
+    .image-preview {
+      width: 45px;
+      height: 45px;
+    }
+
   }
 }
 .price-supporter{

@@ -42,6 +42,10 @@ export default class PackageTable extends Component {
                                     </li>
                                     <li>
                                         <Icon path={mdiCheck} size={0.8} className="mdi-icon"/>
+                                        عدد الفروع غير محدود
+                                    </li>
+                                    <li>
+                                        <Icon path={mdiCheck} size={0.8} className="mdi-icon"/>
                                         صفر عموله على المبيعات
                                     </li>
                                     <li>
