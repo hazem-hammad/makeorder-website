@@ -90,7 +90,7 @@ export default class FeaturesSectionSlider extends Component {
                                                 </span>
                                                 <h3 className="title"> الخصومات  </h3>
                                                 <p className="paragraph">
-                                                    ستتمكن من إنشاء كوبونات الخصم وفق عدد كبير من الخيارات مثل كوبون الخصم على الطلب الأول أو عند شراء صنف معين أو عند تعدى الطلب لقيمة محددة.
+                                                    ستتمكن من إنشاء كوبونات الخصم وفق عدد كبير من الخيارات مثل كوبون الخصم على الطلب الأول.
                                                 </p>
                                                 <Link to="/features" variant="link" size="lg" className="action mt-4">
                                                     شاهد المزيد من المميزات
@@ -113,7 +113,7 @@ export default class FeaturesSectionSlider extends Component {
                                                     خيارات الدفع
                                                 </h3>
                                                 <p className="paragraph">
-                                                    عبر تكاملنا مع بوابات الدفع المختلفة سيتمكن زبائنك من الدفع عبر وسائل الدفع المختلفه ومنها بطاقة مدى , ابل باي, STC Pay  و بطاقات الإتمان وقريبا نقاط قطاف وموبايلي وبالتأكيد يمكنك تفعيل خيار الدفع عند الإستلام
+                                                    سيتمكن زبائنك من الدفع عبر وسائل الدفع المختلفة ويمكنك تفعيل خيار الدفع عند الإستلام.
                                                 </p>
                                                 <Link to="/features" variant="link" size="lg" className="action mt-4">
                                                     شاهد المزيد من المميزات
@@ -136,7 +136,7 @@ export default class FeaturesSectionSlider extends Component {
                                                     الاعلانات والاشعارات
                                                 </h3>
                                                 <p className="paragraph">
-                                                    ستتمكن من اضافة اعلانات تظهر لمتصفحي الموقع بكل  سهولة كما ستتمكن من إرسال إشعارات للجوال عند اختيار الباقة الماسية
+                                                    اضافة اعلانات لتظهر لمتصفحي الموقع وإرسال إشعارات للجوال عند اختيار باقة النمو.
                                                 </p>
                                                 <Link to="/features" variant="link" size="lg" className="action mt-4">
                                                     شاهد المزيد من المميزات
@@ -158,7 +158,7 @@ export default class FeaturesSectionSlider extends Component {
                                                 </span>
                                                 <h3 className="title">  إدارة العملاء   </h3>
                                                 <p className="paragraph">
-                                                    ستحصل على المعلومات الكاملة لعملائك, فكل زبون له صفحة خاصة بكل معلوماتة وكذلك تاريخ المشتريات مع امكانية اضافة ملاحظات
+                                                    ستحصل على المعلومات الكاملة لعملائك, فكل زبون له صفحة خاصة بكل معلوماتة وتاريخ المشتريات
                                                 </p>
                                                 <Link to="/features" variant="link" size="lg" className="action mt-4">
                                                     شاهد المزيد من المميزات
@@ -249,7 +249,7 @@ export default class FeaturesSectionSlider extends Component {
                                                     تطبيق الإدارة العليا
                                                 </h3>
                                                 <p className="paragraph">
-                                                    تطبيق خاص للإدارة العليا للمطعم لتبقى دائما على اطلاع على عدد الطلبيات اليوم والأرباح وعدد العملاء والعديد من الإحصائيات المحدثه لحظياً
+                                                    تطبيق خاص للإدارة لتبقى دائما على اطلاع بالعمليات والإحصائيات المحدثة لحظياً
                                                 </p>
                                                 <Link to="/features" variant="link" size="lg" className="action mt-4">
                                                     شاهد المزيد من المميزات
@@ -284,13 +284,6 @@ export default class FeaturesSectionSlider extends Component {
                                     </Row>
                                     <Image src={customerImageSlide01} className="image-preview"/>
                                 </div>
-
-
-
-
-
-
-
 
                             </Slider>
                         </div>

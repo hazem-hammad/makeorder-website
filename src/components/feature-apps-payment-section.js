@@ -79,8 +79,8 @@ export default class FeatureAppsPaymentSection extends Component {
                         </div>
 
                         <div className="integration-slider second-slider card2">
-                            <p className="title">خيارات الدفع</p>
-                            <p className="subtitle">ستتمكن من اضافه قوائم الطعام والأصناف الخاصه بك بكل سهوله وعدد لا نهائى من الاضافات</p>
+                            <p className="title"> وسائل الدفع </p>
+                            <p className="subtitle">نوفر العديد منها سواء كانت محلية أو عالمية مع توفر الدفع عند الإستلام فى كل الأحوال. </p>
                             <div className='app-logos  logo-box'>
                                 <div>
                                     <span><Image src={logo06} className="image-preview"/></span>
@@ -108,8 +108,8 @@ export default class FeatureAppsPaymentSection extends Component {
                     </Col>
                     <Col md='12' lg="6">
                         <div className="integration-slider card3">
-                            <p className="title">  التواصل والتسويق</p>
-                            <p className="subtitle">ستتمكن من اضافه قوائم الطعام والأصناف الخاصه بك بكل سهوله وعدد لا نهائى من الاضافات</p>
+                            <p className="title">  التسويق </p>
+                            <p className="subtitle">نتوافق مع عشرات المنصات لتقديم تجربة فريدة تسويقياً ومنحك قوة التحليلات لعملائك</p>
                             <div className='logo-box'>
                                 <div>
                                     <span><Image src={logo13} className="image-preview"/></span>
@@ -135,7 +135,8 @@ export default class FeatureAppsPaymentSection extends Component {
                         </div>
                         <div className="integration-slider second-slider card4">
                             <p className="title"> اداره التوصيل</p>
-                            <p className="subtitle">ستتمكن من اضافه قوائم الطعام والأصناف الخاصه بك بكل سهوله وعدد لا نهائى من الاضافات</p>
+                            <p className="subtitle">نتوافق مع العديد من مقدمي خدمات التوصيل لتسهيل انتشارك.
+                                التواصل الأجتماعي </p>
                             <div className='app-logos logo-box'>
                                 <div>
                                     <span><Image src={logo18} className="image-preview"/></span>

@@ -18,7 +18,7 @@ const ContactUsForm = () => {
                                    <Form.Control type="text" placeholder="الاسم" />
                                </Form.Group>
                                <Form.Group controlId="formBasicPhone">
-                                   <Form.Label>رقم الموبايل</Form.Label>
+                                   <Form.Label>رقم الجوال </Form.Label>
                                    <Form.Control type="number" placeholder="رقم الجوال " />
                                </Form.Group>
                                <Form.Group controlId="formBasicName">

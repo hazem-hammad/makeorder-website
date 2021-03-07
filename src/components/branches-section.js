@@ -13,21 +13,10 @@ export default class BranchesSection extends Component {
                     <div>
                         <h2 className="main-title">   ندعم جميع قنوات البيع ونعظم انتشارك </h2>
                         <p className="main-paragraph">
-                            لأننا نؤمن بأن المطاعم يجب أن تتواصل مباشرتاً مع عملائها وباختيارك ميك اوردر ستمتلك موقعك أو تطبيقك الخاص وكذلك امكانية البيع عبر قنوات التواصل المختلفة والواتساب كذلك لخلق تجربة رائعة لعملائك
+                            لأننا نؤمن بأن المطاعم يجب أن تتواصل مباشرتاً مع عملائها وباختيارك ميك اوردر ستتمكن من البيع عبر القنوات التالية
                         </p>
                     </div>
                     <Row className="slider1">
-                        <Col lg="4">
-                            <div className='main-slide-item primary-color' >
-                                <div className='image-box'>
-                                    <Image src={customerImageSlide01} className='image'/>
-                                </div>
-                                <h3 className="title"><span> تطبيق ايفون واندرويد  </span></h3>
-                                <p className="paragraph">
-                                    ستصبح أقرب لزبائنك عبر التطبيق الخاص بك, والذي يمكنهم من الطلب بكل سهولة ويمكنك من ارسال الاشعارات لهم حيث تشمل باقية النمو حصولك على تطبيق للجوال خاص بعلامتك التجارية بمتجر IOS و جوجل متوافق مع مواقع ادارة الإشعارات والتحليلات ليضمن لك تجربة متكاملة رائعة
-                                </p>
-                            </div>
-                        </Col>
                         <Col lg="4">
                             <div className='main-slide-item primary-color' >
                                 <div className='image-box'>
@@ -44,9 +33,20 @@ export default class BranchesSection extends Component {
                                 <div className='image-box'>
                                     <Image src={customerImageSlide01} className='image'/>
                                 </div>
+                                <h3 className="title"><span> تطبيق ايفون واندرويد  </span></h3>
+                                <p className="paragraph">
+                                    ستصبح أقرب لزبائنك عبر التطبيق الخاص بك, والذي يمكنهم من الطلب بكل سهولة ويمكنك من ارسال الاشعارات.
+                                </p>
+                            </div>
+                        </Col>
+                        <Col lg="4">
+                            <div className='main-slide-item primary-color' >
+                                <div className='image-box'>
+                                    <Image src={customerImageSlide01} className='image'/>
+                                </div>
                                 <h3 className="title"><span> البيع عبر وسائل التواصل المختلفه </span></h3>
                                 <p className="paragraph">
-                                    ستتمكن بسهولة من البيع والاستفادة من قوة وسائل التواصل الاجتماعي بالبيع عبر الانستقرام, والفيسبوك والمسنجر وكذلك الواتساب
+                                    ستتمكن بسهولة من البيع والاستفادة من قوة وسائل التواصل الاجتماعي بالبيع عبر الانستقرام, والفيسبوك والمسنجر وكذلك الواتساب.
                                 </p>
                             </div>
                         </Col>
