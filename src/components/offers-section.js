@@ -24,13 +24,13 @@ export default class OffersSection extends Component {
             <div className={`offers-section main-section ${this.props.bg}`}>
                 <Container>
                     <Row className="justify-content-md-between  " >
-                        <Col lg="6" >
+                        <Col lg="5" >
                             <div className="image-demo-box">
                                 <Image src={circleBg} className='image-demo-circle'/>
                                 <Image src={mainSectionPic} className='image-demo'/>
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col lg="7">
                             <div className="content-slide">
                                 <h1 className="title">
                                     {this.props.title}

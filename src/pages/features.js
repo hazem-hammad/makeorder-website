@@ -91,7 +91,7 @@ export default class Features extends Component {
                     className=''
                     list={list3}
                     bg='bg-white feature-customers-section'
-                    title="حدد شكل مطعمك أونلاين"
+                    title="تحكم كامل تمنحك كل شئ"
                     subtitle="">
                 </CustomersSection>
 

@@ -84,11 +84,12 @@ export default class IntegrationSection extends Component {
                         swipe= {true}
                         touchMove= {true}
                         autoplay={true}
-                        speed= {800}
-                        autoplaySpeed= {3000}
+                        speed= {500}
+                        autoplaySpeed= {2000}
                         responsive={responsive}
                         centerMode={true}
                         centerPadding={'65px'}
+                        rtl={true}
                     >
                         <div>
                         <span><Image src={logo01} className="image-preview"/></span>
@@ -138,8 +139,8 @@ export default class IntegrationSection extends Component {
                         swipe= {true}
                         touchMove= {true}
                         autoplay={true}
-                        speed= {800}
-                        autoplaySpeed= {3000}
+                        speed= {500}
+                        autoplaySpeed= {2000}
                         responsive={responsive}
                         centerMode={true}
                         centerPadding={'65px'}

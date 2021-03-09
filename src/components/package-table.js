@@ -19,7 +19,7 @@ export default class PackageTable extends Component {
             return <option value={key}>{key}</option>
         })
         return(
-            <div className="package-table-box custom-width">
+            <div className="package-table-box">
                 <Row>
                     <Col lg="4">
                         <div className="package-table">

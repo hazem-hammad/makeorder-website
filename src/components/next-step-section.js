@@ -6,7 +6,7 @@ const NextStepSection = () => {
     return (
         <div className="customers-section next-step-section bg-white">
             <Container>
-                <div className="margin-right">
+                <div className="">
                     <h2 className="main-title"> حل متكامل.. وعملاء سعداء </h2>
                     <p className="main-paragraph">
                         لأننا نؤمن بأن المطاعم يجب ان تتواصل مباشرتاً مع عملائها! وأن لا يقتطع جزء كبير من مبيعاتها مقابل عمولة! وأن زبونك النهائي هو الأولى بأية خصومات وليس أي طرف ثالث
